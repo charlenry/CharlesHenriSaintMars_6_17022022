@@ -17,7 +17,7 @@ async function getPhotographers() {
   .catch(error => {
     console.log(`HTTP Error: ${error.message}`);
   });
-
+  debugger;
   return photographers;
 
 
