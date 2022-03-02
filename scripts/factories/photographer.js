@@ -1,3 +1,5 @@
+"use strict";
+
 function photographerFactory(data) {
     const { name, portrait } = data;
 
@@ -11,6 +13,7 @@ function photographerFactory(data) {
         h2.textContent = name;
         article.appendChild(img);
         article.appendChild(h2);
+        debugger;
         return (article);
     }
     return { name, picture, getUserCardDOM }

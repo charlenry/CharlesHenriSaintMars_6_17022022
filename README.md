@@ -1,6 +1,5 @@
-# Base de code du projet P6 - Parcours Front-end
+# Projet FishEye
+1. FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux.
+Ce projet consiste à créer un prototype fonctionnel et accessible* de FishEye.
 
-## Démarrer le projet
-
-Rien à installer ici, il suffit d'ouvrir le fichier `index.html`.
-
+Accessible sous-entend qui soit navigable au clavier et via les lecteurs d'écran.
