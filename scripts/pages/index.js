@@ -2,7 +2,7 @@
 
 async function getPhotographers() {
   // Penser à remplacer par les données récupérées dans le json
-  const url = "./data/photographers.json";
+  const url = "../../data/photographers.json";
   // const url = 'http://httpstat.us/500';
 
   const photographers = await fetch(url)
