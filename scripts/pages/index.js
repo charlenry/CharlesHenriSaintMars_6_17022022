@@ -17,7 +17,6 @@ async function getPhotographers() {
   .catch(error => {
     console.log(`HTTP Error: ${error.message}`);
   });
-  debugger;
   return photographers;
 
 
@@ -57,6 +56,7 @@ async function displayData(photographers) {
 async function init() {
   // Récupère les datas des photographes
   const photographers = await getPhotographers();
+  debugger;
   displayData(photographers);
 };
 
