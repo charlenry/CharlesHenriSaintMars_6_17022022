@@ -1,4 +1,5 @@
 "use strict";
+//Ancienne version du factory pattern
 
 function photographerFactory(data) {
     const { name, city, country, tagline, price, portrait } = data;
