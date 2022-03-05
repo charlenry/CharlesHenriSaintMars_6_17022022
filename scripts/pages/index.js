@@ -1,12 +1,12 @@
 "use strict";
 // Gestion de la page d'accueil
 
-const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
-//const url = "/data/photographers.json";
+//const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
+const url = "data/photographers.json";
 //const url = 'http://httpstat.us/404';
 
 class Main {
-  constructor(url) {
+  constructor() {
     this.$photographersSection = document.querySelector(".photographer_section");
     this.dataApi = new DataApi(url);
   }
@@ -27,5 +27,5 @@ class Main {
   }
 }
 
-const main = new Main(url);
+const main = new Main();
 main.init();
