@@ -4,7 +4,7 @@
 
 class PhotographerDataModel {
   /**
-   * @param {string} data 
+   * @param {object} data 
   **/
   constructor(data) {
     this._name = data.name;
