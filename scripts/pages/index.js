@@ -14,7 +14,7 @@ class Main {
   async init() {
     const photographers = await this.dataApi.getPhotographers();
     const media = await this.dataApi.getMedia();
-    debugger;
+//    debugger;
     const photographersTable = photographers.map(data => new DataFactory(data, 'photographer'));
 
     photographersTable.forEach(photographer => {
