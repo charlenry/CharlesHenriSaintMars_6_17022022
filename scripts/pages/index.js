@@ -6,7 +6,7 @@ const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/
 //const url = 'http://httpstat.us/404';
 
 class Main {
-  constructor() {
+  constructor(url) {
     this.$photographersSection = document.querySelector(".photographer_section");
     this.dataApi = new DataApi(url);
   }
@@ -27,5 +27,5 @@ class Main {
   }
 }
 
-const main = new Main();
+const main = new Main(url);
 main.init();
