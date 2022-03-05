@@ -1,8 +1,8 @@
 "use strict";
 // Gestion de la page d'accueil
 
-//const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
-const url = "/data/photographers.json";
+const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
+//const url = "/data/photographers.json";
 //const url = 'http://httpstat.us/404';
 
 class Main {
