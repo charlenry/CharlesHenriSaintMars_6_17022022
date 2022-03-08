@@ -1,30 +1,33 @@
 <!DOCTYPE html>
+<html lang="fr"></html>
 <html>
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <title>Fisheye</title>
   </head>
   <body>
     <header>
-        <img src="assets/images/logo.png" class="logo" />
+        <img src="assets/images/logo.png" class="logo" alt="">
         <h1>Nos photographes</h1>
     </header>
     <main id="main">
         <div class="photographer_section"></div>
     </main>
     <!-- Factories -->
-    <script src="scripts/factories/DataFactory.js"></script>
+    <script src="assets/scripts/factories/DataFactory.js"></script>
     <!-- Data models -->
-    <script src="scripts/data-models/PhotographerDataModel.js"></script>
+    <script src="assets/scripts/data-models/PhotographerDataModel.js"></script>
     <!-- Templates -->
-    <script src="scripts/templates/PhotographerCard.js"></script>
+    <script src="assets/scripts/templates/PhotographerCard.js"></script>
     <!-- Api -->
-    <script src="scripts/api/DataApi.js"></script>
+    <script src="assets/scripts/api/DataApi.js"></script>
     <!-- Entry points -->
-    <script src="scripts/pages/index.js"></script>
-    <script src="scripts/pages/photographer.js"></script>
+    <script src="assets/scripts/pages/index.js"></script>
+    <script src="assets/scripts/pages/photographer.js"></script>
   </body>
 </html>
