@@ -12,17 +12,19 @@ class Main {
   }
 
   async init() {
+    /* Récupération des données du fichier JSON */
     const photographers = await this.dataApi.getPhotographers();
-    const media = await this.dataApi.getMedia();
-//    debugger;
-    const photographersTable = photographers.map(data => new DataFactory(data, 'photographer'));
 
-    photographersTable.forEach(photographer => {
-      console.log("=====");
-      console.log(photographer);
-      console.log("=====");
-      const template = new PhotographerCard(photographer);
-      this.$photographersSection.appendChild(template.createPhotographerCard());
+    /* Création d'un tableau contenant la mise en forme des données des photographes */
+    const photographersDataModel = photographers.map(data => new DataFactory(data, 'photographer'));
+
+    /* Pour chaque photographe */
+    photographersDataModel.forEach(photographer => {
+      /* Créer un objet template */
+      const templateCard = new PhotographerCard(photographer);
+
+      /* Intégrer l'objet template dans la page d'accueil */
+      this.$photographersSection.appendChild(templateCard.createPhotographerCard());
     });
   }
 }

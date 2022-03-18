@@ -2,12 +2,12 @@
 
 // Gestion de la page des photographes
 
-//const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
+ /* Variables globales */
 const url = "assets/data/photographers.json";
-//const url = 'http://httpstat.us/404';
 
+/* Récupération du paramètre ID dans le lien */
 const params = (new URL(document.location)).searchParams;
-const photographId = parseInt(params.get('id')); // Récupération du paramètre ID dans le lien
+const photographId = parseInt(params.get('id')); 
 
 class Main {
   constructor() {
@@ -25,13 +25,14 @@ class Main {
     const photographersDataModel = photographers.map(data => new DataFactory(data, 'photographer'));
 //    const DataModelTable = 
 
+    /* Pour le photographe sélectionné par son ID */
     photographersDataModel.forEach(photographer => {
       if (photographer.id == photographId) {
-        /* Création des objets template */
+        /* Créer les objets template */
         const templateData = new PhotographerData(photographer);
         const templatePortrait = new PhotographerPortrait(photographer);
 
-        /* Intégration des templates dans la page photographer */
+        /* Intégrer les templates dans la page du photographe sélectionné */
         this.$photographData.append(templateData.createPhotographerData());
         this.$photographPortrait.append(templatePortrait.showPortrait());
       }
