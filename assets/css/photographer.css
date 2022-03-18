@@ -6,9 +6,9 @@
     background-color: #FAFAFA;
     height: 300px;
     margin: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;  /* centrage vertical du contenu */
     padding: 0 50px;
 }
 
@@ -23,6 +23,7 @@
     background-color: #901C1C;
     border-radius: 5px;
     cursor:pointer;
+    justify-self: center;
 }
 
 .modal {
@@ -79,9 +80,14 @@ form input {
     border-radius: 5px;
 }
 
+.photograph-portrait {
+    display: flex;
+    justify-content: right;
+}
+
 .photograph-portrait img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
 }
