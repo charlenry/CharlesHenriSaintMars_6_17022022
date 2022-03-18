@@ -11,12 +11,12 @@ class PhotographerPortrait {
   }
 
   showPortrait() {
-    const $div = document.createElement( 'div' );
-
-    const photographerPortrait = `
-      <img src="${this._photographer.portrait}" alt="Photo de ${this._photographer.name}" role="presentation">
-    `;
-    $div.innerHTML = photographerPortrait;
-    return ($div);
+    const $img = $('<img>', {
+      src: `${this._photographer.portrait}`, 
+      alt: `Photo de ${this._photographer.name}`,
+      role: 'presentation'
+    });
+    
+    return $img;
   }
 }

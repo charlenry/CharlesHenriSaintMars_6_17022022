@@ -10,15 +10,11 @@ class PhotographerData {
       this._photographer = photographer;
   }
 
-  createPhotographerCard() {
-    const $div = document.createElement( 'div' );
-
-    const photographerCard = `
-      <h1>${this._photographer.name}</h1>
-      <h2>${this._photographer.city}, ${this._photographer.country}</h2> 
-      <p>${this._photographer.tagline}</p>  
-    `;
-    $div.innerHTML = photographerCard;
-    return ($div);
+  createPhotographerData() {
+    const $h1 = $("<h1></h1>").html(`${this._photographer.name}`);
+    const $h2 = $("<h2></h2>").html(`${this._photographer.city}, ${this._photographer.country}`);
+    const $p = $("<p></p>").html(`${this._photographer.tagline}`);
+    const $div = $("<div></div>").append($h1, $h2, $p);
+    return [$h1, $h2, $p];
   }
 }

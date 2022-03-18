@@ -11,23 +11,29 @@ const photographId = parseInt(params.get('id')); // Récupération du paramètre
 
 class Main {
   constructor() {
-    this.$photographData = document.querySelector(".photograph-data");
-    this.$photographPortrait = document.querySelector(".photograph-portrait");
+    this.$photographData = $(".photograph-data");
+    this.$photographPortrait = $(".photograph-portrait");
     this.dataApi = new DataApi(url);
   }
 
   async init() {
+    /* Récupération des données du fichier JSON */
     const photographers = await this.dataApi.getPhotographers();
     const media = await this.dataApi.getMedia();
-//    debugger;
-    const photographersTable = photographers.map(data => new DataFactory(data, 'photographer'));
 
-    photographersTable.forEach(photographer => {
+    /* Création d'un tableau contenant la mise en forme des données des photographes */
+    const photographersDataModel = photographers.map(data => new DataFactory(data, 'photographer'));
+//    const DataModelTable = 
+
+    photographersDataModel.forEach(photographer => {
       if (photographer.id == photographId) {
+        /* Création des objets template */
         const templateData = new PhotographerData(photographer);
         const templatePortrait = new PhotographerPortrait(photographer);
-        this.$photographData.appendChild(templateData.createPhotographerCard());
-        this.$photographPortrait.appendChild(templatePortrait.showPortrait());
+
+        /* Intégration des templates dans la page photographer */
+        this.$photographData.append(templateData.createPhotographerData());
+        this.$photographPortrait.append(templatePortrait.showPortrait());
       }
       
     });

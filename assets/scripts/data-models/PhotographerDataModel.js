@@ -1,6 +1,6 @@
 "use strict";
 //Photographer Data Model
-//Cet objet met en forme les données avant la présentation à l'objet template PhotographerCard.
+//Cet objet met en forme les données (modèle de données) avant la présentation à un objet template.
 
 class PhotographerDataModel {
   /**
