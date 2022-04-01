@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1364265626.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <title>Fisheye - Page du photographe </title>
   </head>
@@ -15,6 +16,7 @@
         <img src="assets/images/logo.png" class="logo" alt="Page d'accueil de FishEye" role="link" tabindex="0">
       </a>
     </header>
+  
     <main id="main">
       <div class="photograph-header">
         <div class="photograph-data"></div>
@@ -22,8 +24,9 @@
         <div class="photograph-portrait"></div>
       </div>
       <div class="sort-by"></div>
-      <div class="photograph-gallery"></div>
+      <div class="gallery-wrapper"></div>
     </main>
+
     <div id="contact_modal">
 			<div class="modal">
 				<header>
@@ -39,16 +42,18 @@
 				</form>
 			</div>
 		</div>
+
     <!-- jQuery library -->
     <script src="assets/scripts/jquery/jquery-3.6.0.js"></script>
     <!-- Factories -->
     <script src="assets/scripts/factories/DataFactory.js"></script>
     <!-- Data models -->
     <script src="assets/scripts/data-models/PhotographerDataModel.js"></script>
+    <script src="assets/scripts/data-models/MediaDataModel.js"></script>
     <!-- Templates -->
     <script src="assets/scripts/templates/PhotographerData.js"></script>
     <script src="assets/scripts/templates/PhotographerPortrait.js"></script>
-    <script src="assets/scripts/templates/PhotographerGallery.js"></script>
+    <script src="assets/scripts/templates/MediaCard.js"></script>
     <!-- Api -->
     <script src=" assets/scripts/api/DataApi.js"></script>
     <!-- Contact modal-->

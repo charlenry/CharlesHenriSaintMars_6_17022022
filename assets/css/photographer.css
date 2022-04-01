@@ -102,3 +102,43 @@ form input {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px 68px;
+    justify-items: center; /* Centrer les éléments dans les cellules du tableau suivant l'axe principal */
+    align-items: center; /* Centrer les éléments dans les cellules du tableau suivant l'axe secondaire */
+    gap: 40px 120px;
+}
+
+.gallery-wrapper img,  .gallery-wrapper video{
+    width: 450px;
+    height: 450px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+figure div, .video-wrapper div {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 22px;
+    color: #901C1C;
+}
+   
+.caption {
+    flex: auto;  /* équivaut à flex: 1; ou flex: 1 1 auto; */
+}
+   
+.caption, .likes {
+    padding: 10px;
+    align-self: center;
+}
+   
+.coeur {
+    align-self: center;
+    color: #FAFAFA;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #901C1C;
+}

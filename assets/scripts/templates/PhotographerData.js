@@ -18,3 +18,5 @@ class PhotographerData {
     return [$h1, $h2, $p];
   }
 }
+
+//export default PhotographerData;

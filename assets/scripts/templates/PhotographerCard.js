@@ -26,3 +26,5 @@ class PhotographerCard {
     return ($article);
   }
 }
+
+//export default PhotographerCard;

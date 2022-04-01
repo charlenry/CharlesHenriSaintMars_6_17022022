@@ -20,3 +20,5 @@ class PhotographerPortrait {
     return $img;
   }
 }
+
+//export default PhotographerPortrait;

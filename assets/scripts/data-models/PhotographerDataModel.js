@@ -47,5 +47,6 @@ class PhotographerDataModel {
   get thumbnail() {
     return `assets/images/photographers/thumbnails/${this._portrait}`;
   }
-
 }
+
+//export default PhotographerDataModel;

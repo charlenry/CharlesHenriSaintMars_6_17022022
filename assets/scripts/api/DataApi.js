@@ -23,7 +23,7 @@ class DataApi {
       });
   }
 
-  async getMedia() {
+  async getMedias() {
     return fetch(this._url)
     .then(response => {
       if(response.ok) return response.json();
@@ -37,3 +37,5 @@ class DataApi {
     });
   }
 }
+
+//export default DataApi;

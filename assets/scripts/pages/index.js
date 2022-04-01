@@ -1,6 +1,11 @@
 "use strict";
 // Gestion de la page d'accueil
 
+/* importation des modules */
+//import DataApi from "../api/DataApi.js"
+//import DataFactory from "../factories/DataFactory.js"
+//import PhotographerCard from "../templates/PhotographerCard.js"
+
 //const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
 const url = "assets/data/photographers.json";
 //const url = 'http://httpstat.us/404';
