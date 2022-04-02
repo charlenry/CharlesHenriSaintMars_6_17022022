@@ -23,7 +23,7 @@ class PhotographerCard {
       <p>${this._photographer.price}€/jour</p> 
     `;
     $article.innerHTML = photographerCard;
-    return ($article);
+    return $article;
   }
 }
 

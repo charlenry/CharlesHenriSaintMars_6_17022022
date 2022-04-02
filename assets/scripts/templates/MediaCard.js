@@ -16,7 +16,7 @@ class MediaCard {
     if(this._media.thumbnail.endsWith(".jpg")) {  /* Si c'est une image */
       const mediaCard = `
         <figure>
-          <img src="${this._media.thumbnail}" alt="${this._media.title}" role="button">
+          <img src="${this._media.thumbnail}" alt="${this._media.title}" role=""button tabindex="0">
           <div>
             <figcaption class="caption">${this._media.title}</figcaption>
             <span class="likes" id="likes-${this._media.id}">${this._media.likes}</span>
@@ -29,9 +29,9 @@ class MediaCard {
      return this.$wrapper;
     } else if(this._media.video.endsWith(".mp4")) {  /* Si c'est une vidéo */
       const mediaCard = `
-        <div class="video-wrapper">
+        <div class="video-wrapper" role="button" tabindex="0">
           <video controls preload="metadata">
-            <source src="${this._media.video}" type="video/mp4" role="button">
+            <source src="${this._media.video}" type="video/mp4">
             Your browser does not support HTML video.
           </video>
           <div>
