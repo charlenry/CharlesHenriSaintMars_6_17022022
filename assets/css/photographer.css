@@ -109,7 +109,7 @@ form input {
     margin: 40px 68px;
     justify-items: center; /* Centrer les éléments dans les cellules du tableau suivant l'axe principal */
     align-items: center; /* Centrer les éléments dans les cellules du tableau suivant l'axe secondaire */
-    gap: 40px 120px;
+    gap: 32px 120px;
 }
 
 .gallery-wrapper img,  .gallery-wrapper video{
@@ -141,4 +141,38 @@ figure div, .video-wrapper div {
     color: #FAFAFA;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #901C1C;
+}
+
+.coeur.liked {
+    color: #901C1C;
+    -webkit-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    -webkit-text-stroke-color: #901C1C;
+}
+
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 370px;
+    height: 50px;
+    right: 60px;
+    background-color: #D3573C;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 900;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.footer-wrapper .likes-wrapper,
+.footer-wrapper .price {
+    align-self: center;
+}
+
+.likes-wrapper .coeur {
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
