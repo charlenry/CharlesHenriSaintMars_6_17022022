@@ -1,5 +1,10 @@
+/**
+ * Nom du fichier : assets\scripts\api\DataApi.js
+ * Fonction : Objet qui se connecte au fichier JSON passé en argument et retourne les données selon leur type.
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-// Cet objet se connecte au fichier JSON passé en paramètre et retourne les données selon leur type.
 
 class DataApi {
   /**

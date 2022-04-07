@@ -1,6 +1,11 @@
+/**
+ * Nom du fichier : assets\scripts\data-models\PhotographerDataModel.js
+ * Fonction : Objet qui met en forme les données (modèle de données) avant la présentation à un objet template.
+ * Design Pattern : Constructor Pattern
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-//Photographer Data Model
-//Cet objet met en forme les données (modèle de données) avant la présentation à un objet template.
 
 class PhotographerDataModel {
   /**

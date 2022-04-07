@@ -1,3 +1,9 @@
+/**
+ * Nom du fichier : assets\css\photographer.css
+ * Fonction : Stylise la page de chaque photographe
+ * Auteur(s) : Alexia Toulmet, Nicolas Patschkowski, Charles-Henri Saint-Mars
+**/
+
 #contact_modal {
     display: none;
 }
@@ -119,7 +125,7 @@ form input {
     object-fit: cover;
 }
 
-figure div, .video-wrapper div {
+figure > div, .video-wrapper > div {
     display: flex;
     justify-content: space-between;
     width: 450px;
@@ -131,8 +137,8 @@ figure div, .video-wrapper div {
     flex: auto;  /* équivaut à flex: 1; ou flex: 1 1 auto; */
 }
    
-.caption, .likes {
-    padding: 10px;
+.caption, .legend-likes {
+    padding: 7px 0 10px 0;
     align-self: center;
 }
    
@@ -151,23 +157,23 @@ figure div, .video-wrapper div {
     -webkit-text-stroke-color: #901C1C;
 }
 
-.footer-wrapper {
+.banner-wrapper {
     position: fixed;
     bottom: 0;
     width: 370px;
     height: 50px;
     right: 60px;
-    background-color: #D3573C;
+    background-color: #DB8876;
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 900;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.footer-wrapper .likes-wrapper,
-.footer-wrapper .price {
+.banner-wrapper .likes-wrapper,
+.banner-wrapper .price {
     align-self: center;
 }
 
@@ -176,3 +182,29 @@ figure div, .video-wrapper div {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
+
+.sorter-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.sorter-form label{
+    font-size: 20px;
+    font-weight: 900;
+    align-self: center;
+}
+
+.sorter-select {
+    width: 200px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #901C1C;
+    color: white;
+    font-size: 22px;
+    display: flex;
+}
+

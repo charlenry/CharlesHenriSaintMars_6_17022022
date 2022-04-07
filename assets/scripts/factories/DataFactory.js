@@ -1,6 +1,11 @@
+/**
+ * Nom du fichier : assets\scripts\factories\DataFactory.js
+ * Fonction : Objet qui permet de choisir l'objet de modélisation des données en fonction de leur type.
+ * Design Pattern : Factory Pattern
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-//Factory pattern
-//Cet objet permet de choisir l'objet de mise en forme des données en fonction de leur type.
 
 /* importation des modules */
 //import PhotographerDataModel from "../data-models/PhotographerDataModel.js";

@@ -1,6 +1,10 @@
+/**
+ * Nom du fichier : assets\scripts\templates\MediaCard.js
+ * Fonction : Media Card Template (modèle d'affichage des cartes des medias des photographes)
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-//Media Card Template
-//Cet objet organise l'affichage des media des photographes.
 
 class MediaCard {
   /**
@@ -21,6 +25,19 @@ class MediaCard {
     this.$wrapper
         .querySelector(`#coeur-${this._media.id}`)
         .addEventListener('click', function() {
+          if (this.classList.contains('liked')) {
+            this.classList.remove('liked');  /* this = élément cliqué */
+            that._likesSubject.fire('DEC', that._media);  /* that = $wrapper */
+          } else {
+            this.classList.add('liked');  /* this = élément cliqué */
+            that._likesSubject.fire('INC', that._media);  /* that = $wrapper */
+          }
+        });
+
+        this.$wrapper
+        .querySelector(`#coeur-${this._media.id}`)
+        .addEventListener('keydown', function(e) {
+          if (e.keyCode == 13) {
             if (this.classList.contains('liked')) {
               this.classList.remove('liked');  /* this = élément cliqué */
               that._likesSubject.fire('DEC', that._media);  /* that = $wrapper */
@@ -28,6 +45,7 @@ class MediaCard {
               this.classList.add('liked');  /* this = élément cliqué */
               that._likesSubject.fire('INC', that._media);  /* that = $wrapper */
             }
+          }
         });
   }
 
@@ -35,11 +53,13 @@ class MediaCard {
     if(this._media.thumbnail.endsWith(".jpg")) {  /* Si c'est une image */
       const mediaCard = `
         <figure>
-          <img src="${this._media.thumbnail}" alt="${this._media.title}" role=""button tabindex="0">
+          <img src="${this._media.thumbnail}" alt="${this._media.title}" aria-label="photo titrée: ${this._media.title} "tabindex="0">
           <div>
             <figcaption class="caption">${this._media.title}</figcaption>
-            <span class="likes" id="likes-${this._media.id}">${this._media.likes}</span>
-            <span tabindex="0" class="coeur" id="coeur-${this._media.id}"><i class="fas fa-heart"></i></span>
+            <div class="legend-likes" tabindex="0" role="button">
+              <span class="likes" id="likes-${this._media.id}">${this._media.likes}</span>
+              <span aria-label="j'aime" class="coeur" id="coeur-${this._media.id}"><span aria-label="Tapez entrée ou espace pour mettre j'aime ou annuler j'aime à la photo" role="button" tabindex="0"><i class="fas fa-heart"></i></span></span>
+            </div>
           </div>
         </figure>
       `;
@@ -49,15 +69,17 @@ class MediaCard {
      return this.$wrapper;
     } else if(this._media.video.endsWith(".mp4")) {  /* Si c'est une vidéo */
       const mediaCard = `
-        <div class="video-wrapper" role="button">
-          <video preload="metadata" tabindex="0">
+        <div class="video-wrapper">
+          <video preload="metadata" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
             <source src="${this._media.video}" type="video/mp4">
             Your browser does not support HTML video.
           </video>
           <div>
             <span class="caption">${this._media.title}</span>
-            <span class="likes" id="likes-${this._media.id}">${this._media.likes}</span>
-            <span tabindex="0" class="coeur" id="coeur-${this._media.id}"><i class="fas fa-heart"></i></span>
+            <div class="legend-likes" tabindex="0" role="button">
+              <span class="likes" id="likes-${this._media.id}">${this._media.likes}</span>
+              <span aria-label="j'aime" class="coeur" id="coeur-${this._media.id}"><span aria-label="Tapez entrée ou espace pour mettre j'aime ou annuler j'aime à la vidéo" role="button" tabindex="0"><i class="fas fa-heart"></i></span></span>
+            </div>
           </div>
         </div>
       `;

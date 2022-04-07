@@ -1,5 +1,10 @@
+/**
+ * Nom du fichier : assets\scripts\pages\photographer.js
+ * Fonction : Objet principal qui gère la page de chaque photographe et qui ordonnance d'autres objets tel un contrôleur dans une architecture MVC.
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-// Gestion de la page des photographes
 
 /* importation des modules */
 // import DataApi from "../api/DataApi.js"
@@ -22,8 +27,10 @@ class Main {
     this.$photographData = $(".photograph-data");
     this.$photographPortrait = $(".photograph-portrait");
     this.$galleryWrapper = $(".gallery-wrapper");
+    this.$sorterWrapper = $(".sorter-wrapper");
     this.$totalLikes = $(".total-likes");
     this.$price = $(".price");
+    this.$bannerWrapper = $(".banner-wrapper"); 
     this._dataApi = new DataApi(url); /* Création de récupération des données */
 
     // Likes Pub/Sub
@@ -43,7 +50,7 @@ class Main {
 
     /* Pour le photographe sélectionné par son ID */
     photographersDataModel.forEach(photographer => {
-      if (photographer.id == photographId) {
+      if (photographer.id === photographId) {
         /* Garder en mémoire le prix du photographe sélectionné */
         pricePhotographer = photographer.price;
 
@@ -57,9 +64,14 @@ class Main {
       }
     });
 
+    const photograherMedias = mediaDataModel.filter(media => media.photographerId === photographId);
+
+    const Sorter = new SorterTemplate(photograherMedias, this._likesSubject);
+    Sorter.render();
+
     /* Pour chaque media correspondant à un photographe sélectionné par son ID */
     mediaDataModel.forEach(media => {
-     if (media.photographerId == photographId) {
+     if (media.photographerId === photographId) {
        /* Ajouter le nombre de likes du media au total des likes */
        totalLikes = totalLikes + media.likes;
 
@@ -71,10 +83,13 @@ class Main {
      }
     });
 
-    /* Afficher le total des likes */
-    this.$totalLikes.text(totalLikes.toLocaleString());
-    /* Afficher le prix du photographe */
-    this.$price.text(`${pricePhotographer}€/jour`);
+    /* Afficher les valeurs de la bannière */
+//    this.$totalLikes.text(totalLikes.toLocaleString());
+//    this.$price.html(`${pricePhotographer}€/jour`);
+
+    
+    const bannerTemplate = new BannerTemplate(totalLikes, pricePhotographer)
+    this.$bannerWrapper.append(bannerTemplate.createBanner());
 
   }
 }

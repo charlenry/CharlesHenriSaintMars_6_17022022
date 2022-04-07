@@ -1,6 +1,14 @@
+/**
+ * Nom du fichier : assets\scripts\likesHandler\Counter.js
+ * Fonction : Objet qui compte/décompte les likes
+ * Design Pattern : Observer Pattern (observer/subscriber)
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
+"use strict";
 class LikesCounter {
   constructor() {
-
+    
   }
 
   update(action, media) {

@@ -23,15 +23,12 @@
         <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
         <div class="photograph-portrait"></div>
       </div>
-      <div class="sort-by"></div>
+      
+      <div class="sorter-wrapper"></div>
+
       <div class="gallery-wrapper"></div>
-      <div class="footer-wrapper">
-        <div class="likes-wrapper">
-          <span class="total-likes"></span>
-          <span class="coeur"><i class="fas fa-heart"></i></span>          
-        </div>
-        <span class="price"></span>
-      </div>
+
+      <div class="banner-wrapper"></div>
     </main>
 
     <div id="contact_modal">
@@ -53,6 +50,12 @@
     <!-- jQuery library -->
     <script src="assets/scripts/jquery/jquery-3.6.0.js"></script>
 
+    <!-- Proxy -->
+    <script src="./assets/scripts/proxy/ProxyCachingSorter.js"></script>
+
+    <!-- Sorter -->
+    <script src="./assets/scripts/sorter/Sorter.js"></script>
+
     <!-- Factories -->
     <script src="assets/scripts/factories/DataFactory.js"></script>
 
@@ -64,6 +67,8 @@
     <script src="assets/scripts/templates/PhotographerData.js"></script>
     <script src="assets/scripts/templates/PhotographerPortrait.js"></script>
     <script src="assets/scripts/templates/MediaCard.js"></script>
+    <script src="./assets/scripts/templates/BannerTemplate.js"></script>
+    <script src="./assets/scripts/templates/SorterTemplate.js"></script>
 
     <!-- Api -->
     <script src=" assets/scripts/api/DataApi.js"></script>

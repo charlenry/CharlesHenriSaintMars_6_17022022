@@ -1,3 +1,9 @@
+/**
+ * Nom du fichier : assets\css\style.css
+ * Fonction : Stylise la page d'accueil
+ * Auteur(s) : Alexia Toulmet, Nicolas Patschkowski, Charles-Henri Saint-Mars
+**/
+
 @import url("photographer.css");
 
 * {
@@ -8,7 +14,7 @@
 
 *:focus {
     outline: 4px solid #901C1C;
-    outline-offset: 3px;
+    outline-offset: 2px;
   }
 
 body {
@@ -25,6 +31,11 @@ header {
     height: 90px;
 }
 
+header a {
+    display:contents;
+    text-decoration: none;
+}
+
 h1 {
     color: #901C1C;
     margin-right: 100px;
@@ -32,6 +43,7 @@ h1 {
 
 .logo {
     height: 50px;
+    width: 200px;
     margin-left: 100px;
 }
 

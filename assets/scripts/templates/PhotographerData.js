@@ -1,6 +1,10 @@
+/**
+ * Nom du fichier : assets\scripts\templates\PhotographerData.js
+ * Fonction : Photographer Data Template (modèle d'affichage des données des photographes)
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-//Photographer Card Template
-//Cet objet organise l'affichage des données sur les photographes.
 
 class PhotographerData {
   /**

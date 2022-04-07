@@ -1,14 +1,20 @@
+/**
+ * Nom du fichier : assets\scripts\pages\index.js
+ * Fonction : Objet principal qui gère la page d'accueil et qui ordonnance d'autres objets tel un contrôleur dans une architecture MVC.
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-// Gestion de la page d'accueil
 
 /* importation des modules */
 //import DataApi from "../api/DataApi.js"
 //import DataFactory from "../factories/DataFactory.js"
 //import PhotographerCard from "../templates/PhotographerCard.js"
 
+//const url = 'http://httpstat.us/404';
 //const url = "https://raw.githubusercontent.com/charlenry/Front-End-Fisheye/main/data/photographers.json";
 const url = "assets/data/photographers.json";
-//const url = 'http://httpstat.us/404';
+
 
 class Main {
   constructor() {

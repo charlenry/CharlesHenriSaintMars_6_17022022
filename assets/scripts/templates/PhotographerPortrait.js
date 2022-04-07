@@ -1,6 +1,10 @@
+/**
+ * Nom du fichier : assets\scripts\templates\PhotographerPortrait.js
+ * Fonction : Photographer Portrait Template (modèle d'affichage du portrait des photographes)
+ * Auteur(s) : Charles-Henri Saint-Mars
+**/
+
 "use strict";
-//Photographer Card Template
-//Cet objet organise l'affichage de la photo du photographe.
 
 class PhotographerPortrait {
   /**
@@ -14,7 +18,8 @@ class PhotographerPortrait {
     const $img = $('<img>', {
       src: `${this._photographer.portrait}`, 
       alt: `Photo de ${this._photographer.name}`,
-      role: 'presentation'
+      role: 'img',
+      tabindex: '0'
     });
     
     return $img;
