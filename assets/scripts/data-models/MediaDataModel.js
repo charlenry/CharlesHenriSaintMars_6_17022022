@@ -58,6 +58,17 @@ class MediaDataModel {
     }
   }
 
+  get videoThumbnail() {
+    if (this._video != undefined) {
+      let videoName = this._video.slice(0, -4);
+      return `assets/images/videos/thumbnails/${videoName}.jpg`;
+    } else {
+      return '';
+    }
+  }
+
+
+
   get likes() {
     return this._likes;
   }

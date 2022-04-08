@@ -70,7 +70,7 @@ class MediaCard {
     } else if(this._media.video.endsWith(".mp4")) {  /* Si c'est une vidéo */
       const mediaCard = `
         <div class="video-wrapper">
-          <video preload="metadata" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
+          <video poster="${this._media.videoThumbnail}" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
             <source src="${this._media.video}" type="video/mp4">
             Your browser does not support HTML video.
           </video>

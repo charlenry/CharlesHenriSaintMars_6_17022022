@@ -21,35 +21,6 @@ class SorterTemplate {
     this.ProxyCachingSorter = new ProxyCachingSorter();
   }
 
-  // handleLikeButton() {
-  //   const that = this  /* this = $wrapper */
-    
-  //   this.$wrapper
-  //     .querySelector(`#coeur-${this._media.id}`)
-  //     .addEventListener('click', function() {
-  //       if (this.classList.contains('liked')) {
-  //         this.classList.remove('liked');  /* this = élément cliqué */
-  //         that._likesSubject.fire('DEC', that._media);  /* that = $wrapper */
-  //       } else {
-  //         this.classList.add('liked');  /* this = élément cliqué */
-  //         that._likesSubject.fire('INC', that._media);  /* that = $wrapper */
-  //       }
-  //     });
-  //     this.$wrapper
-  //     .querySelector(`#coeur-${this._media.id}`)
-  //     .addEventListener('keydown', function(e) {
-  //       if (e.keyCode == 13) {
-  //         if (this.classList.contains('liked')) {
-  //           this.classList.remove('liked');  /* this = élément cliqué */
-  //           that._likesSubject.fire('DEC', that._media);  /* that = $wrapper */
-  //         } else {
-  //           this.classList.add('liked');  /* this = élément cliqué */
-  //           that._likesSubject.fire('INC', that._media);  /* that = $wrapper */
-  //         }
-  //       }
-  //     });
-  // }
-
   async sorterMedias(sorter) {
     this.clearMediasWrapper();
 
@@ -85,7 +56,7 @@ class SorterTemplate {
       <form action="#" method="POST" class="sorter-form">
         <label for="sorter-select">Triez par : </label>
         <select name="sorter-select" id="sorter-select" class="sorter-select">
-          <option value="DATE">Date</option>
+          <option value="">Aucun tri</option>
           <option value="POP">Popularité</option>
           <option value="TITRE">Titre</option>
         </select>
