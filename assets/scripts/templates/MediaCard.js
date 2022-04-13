@@ -10,10 +10,13 @@ class MediaCard {
   /**
    * @param {object} media
    * @param {object} likesSubject
+   * @param {object} thatPhotograherMedias
   **/
-  constructor(media, likesSubject) {
+
+  constructor(media, likesSubject, thatPhotograherMedias) {
       this._media = media;
       this._likesSubject = likesSubject;
+      this._thatPhotograherMedias = thatPhotograherMedias;
       
       this.$wrapper = document.createElement('div');
       this.$wrapper.classList.add('media-card-wrapper');
@@ -49,11 +52,30 @@ class MediaCard {
         });
   }
 
+  addCarouselForImg() {
+    this.$wrapper
+      .querySelector('img')
+      .addEventListener('click', () => {
+        const carousel = new CarouselModal(this._media, this._thatPhotograherMedias);
+        carousel.render();
+      });
+  }
+
+  addCarouselForVideo() {
+    this.$wrapper
+      .querySelector('video')
+      .addEventListener('click', () => {
+        const carousel = new CarouselModal(this._media, this._thatPhotograherMedias);
+        carousel.render();
+      });
+  }
+
+
   createMediaCard() {
-    if(this._media.thumbnail.endsWith(".jpg")) {  /* Si c'est une image */
+    if(this._media.thumbnail) {  /* Si c'est une image */
       const mediaCard = `
         <figure>
-          <img src="${this._media.thumbnail}" alt="${this._media.title}" aria-label="photo titrée: ${this._media.title} "tabindex="0">
+          <img class="cursor" src="${this._media.thumbnail}" alt="${this._media.title}" aria-label="photo titrée: ${this._media.title} "tabindex="0">
           <div>
             <figcaption class="caption">${this._media.title}</figcaption>
             <div class="legend-likes" tabindex="0" role="button">
@@ -66,11 +88,12 @@ class MediaCard {
       
      this.$wrapper.innerHTML = mediaCard;
      this.handleLikeButton();
+     this.addCarouselForImg();
      return this.$wrapper;
-    } else if(this._media.video.endsWith(".mp4")) {  /* Si c'est une vidéo */
+    } else if(this._media.video) {  /* Si c'est une vidéo */
       const mediaCard = `
         <div class="video-wrapper">
-          <video poster="${this._media.videoThumbnail}" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
+          <video class="cursor" poster="${this._media.videoThumbnail}" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
             <source src="${this._media.video}" type="video/mp4">
             Your browser does not support HTML video.
           </video>
@@ -86,6 +109,7 @@ class MediaCard {
 
       this.$wrapper.innerHTML = mediaCard;
       this.handleLikeButton();
+      this.addCarouselForVideo();
       return this.$wrapper;
     } else {
       throw "Error : Unknown media type";

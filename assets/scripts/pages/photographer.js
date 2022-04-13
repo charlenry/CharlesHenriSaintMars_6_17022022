@@ -46,7 +46,7 @@ class Main {
 
     /* Création d'un tableau contenant la mise en forme des données des photographes */
     const photographersDataModel = photographers.map(data => new DataFactory(data, 'photographer'));
-    const mediaDataModel = medias.map(data => new DataFactory(data, 'media'));
+    const mediasDataModel = medias.map(data => new DataFactory(data, 'media'));
 
     /* Pour le photographe sélectionné par son ID */
     photographersDataModel.forEach(photographer => {
@@ -64,19 +64,19 @@ class Main {
       }
     });
 
-    const photograherMedias = mediaDataModel.filter(media => media.photographerId === photographId);
-
-    const Sorter = new SorterTemplate(photograherMedias, this._likesSubject);
+    // Tableau des medias du photographe sélectionné
+    const thatPhotograherMedias = mediasDataModel.filter(media => media.photographerId === photographId);
+    const Sorter = new SorterTemplate(thatPhotograherMedias, this._likesSubject);
     Sorter.render();
 
     /* Pour chaque media correspondant à un photographe sélectionné par son ID */
-    mediaDataModel.forEach(media => {
+    mediasDataModel.forEach(media => {
      if (media.photographerId === photographId) {
        /* Ajouter le nombre de likes du media au total des likes */
        totalLikes = totalLikes + media.likes;
 
        /* Créer un objet template */
-       const templateMedia = new MediaCard(media, this._likesSubject);
+       const templateMedia = new MediaCard(media, this._likesSubject, thatPhotograherMedias);
 
        /* Intégrer le template dans la page du photographe sélectionné */
        this.$galleryWrapper.append(templateMedia.createMediaCard());
@@ -84,10 +84,6 @@ class Main {
     });
 
     /* Afficher les valeurs de la bannière */
-//    this.$totalLikes.text(totalLikes.toLocaleString());
-//    this.$price.html(`${pricePhotographer}€/jour`);
-
-    
     const bannerTemplate = new BannerTemplate(totalLikes, pricePhotographer)
     this.$bannerWrapper.append(bannerTemplate.createBanner());
 

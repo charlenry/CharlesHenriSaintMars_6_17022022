@@ -67,7 +67,13 @@ class MediaDataModel {
     }
   }
 
-
+  get mediaFile() {
+    if (this._image != undefined) {
+      return `assets/images/photos/${this._image}`;
+    } else {
+      return `assets/images/videos/${this._video}`;
+    }
+  }
 
   get likes() {
     return this._likes;

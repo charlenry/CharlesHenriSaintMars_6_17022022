@@ -13,7 +13,7 @@ class SorterTemplate {
   **/
 
   constructor(medias, likesSubject) {
-    this._medias = medias;
+    this._medias = medias;  /* identique à thatPhotograherMedias */
     this._likesSubject = likesSubject;
     this.$wrapper = document.createElement('div');
     this.$sorterWrapper = document.querySelector('.sorter-wrapper')
@@ -27,12 +27,12 @@ class SorterTemplate {
     if (sorter) {
       const sortedData = await this.ProxyCachingSorter.getSorterCached(this._medias, sorter);
       sortedData.medias.forEach(media => {
-        const mediaTemplate = new MediaCard(media, this._likesSubject);
+        const mediaTemplate = new MediaCard(media, this._likesSubject, this._medias);
         this.$galleryWrapper.appendChild(mediaTemplate.createMediaCard());
       });
     } else {
       this._medias.forEach(media => {
-        const mediaTemplate = new MediaCard(media, this._likesSubject);
+        const mediaTemplate = new MediaCard(media, this._likesSubject, this._medias);
         this.$galleryWrapper.appendChild(mediaTemplate.createMediaCard());
       });
     }
