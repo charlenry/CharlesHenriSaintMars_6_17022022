@@ -321,7 +321,6 @@ figure > div, .video-wrapper > div {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
 }
 
 .arrow img {
