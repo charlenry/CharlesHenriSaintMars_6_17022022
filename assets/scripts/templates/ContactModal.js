@@ -22,6 +22,7 @@ class ContactModal {
   onContactButton() {
     this.$contactMe.addEventListener('click', () => {
         this.$modalWrapper.classList.add('modal-contact-on');
+        this.$wrapper.style.display = "block";
       });
   }
 
@@ -232,6 +233,7 @@ class ContactModal {
           this.validateMessage(this.$message, this.$errorMessage, e)) {
         this.collectData();
         this.clearGreenBorder();
+        this.$wrapper.style.display = "none";
         this.$modalWrapper.classList.remove('modal-contact-on');
         this.$contactForm.reset();  //reset the form
         e.preventDefault();   //prevent the modal thanks to close automatically
@@ -246,6 +248,7 @@ class ContactModal {
     this.$wrapper
       .querySelector('.close-btn')
       .addEventListener('click', () => {
+        this.$wrapper.style.display = "none";
         this.$modalWrapper.classList.remove('modal-contact-on');
       });
   }
