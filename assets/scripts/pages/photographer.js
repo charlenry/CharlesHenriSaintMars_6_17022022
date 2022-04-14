@@ -64,6 +64,9 @@ class Main {
       }
     });
 
+    const contactForm = new ContactModal();
+    contactForm.createFormContact();
+
     // Tableau des medias du photographe sélectionné
     const thatPhotograherMedias = mediasDataModel.filter(media => media.photographerId === photographId);
     const Sorter = new SorterTemplate(thatPhotograherMedias, this._likesSubject);

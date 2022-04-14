@@ -19,7 +19,7 @@ class PhotographerCard {
 
     const photographerCard = `
       <a href="photographer.html?id=${this._photographer.id}">
-        <img src="${this._photographer.thumbnail}" alt="Photo de ${this._photographer.name}"> 
+        <img class="hover-shadow" src="${this._photographer.thumbnail}" alt="Photo de ${this._photographer.name}"> 
         <h2 aria-hidden="true">${this._photographer.name}</h2>
       </a>
       <h3>${this._photographer.city}, ${this._photographer.country}</h3> 

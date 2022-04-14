@@ -4,6 +4,8 @@
  * Auteur(s) : Charles-Henri Saint-Mars
 **/
 
+"use strict";
+
 class CarouselModal {
   constructor(media, thatPhotograherMedias) {
     this._media = media;
@@ -12,8 +14,8 @@ class CarouselModal {
     this._totalMedias = this._thatPhotograherMedias.length;
     
     this.$wrapper = document.createElement('div');
-    this.$wrapper.classList.add('carousel-wrapper');
-    this.$modalWrapper = document.querySelector('.modal');
+    this.$wrapper.classList.add('modal-wrapper__carousel');
+    this.$modalWrapper = document.querySelector('.modal-wrapper');
     this.$previousMedia = document.querySelector('.prev');
     this.$nextMedia = document.querySelector('.next');
   }
@@ -68,7 +70,7 @@ class CarouselModal {
 
   onCloseButton() {
     this.$wrapper
-      .querySelector('.close-btn')
+      .querySelector('.close-btn--carousel')
       .addEventListener('click', () => {
         this.$modalWrapper.classList.remove('modal-on');
         this.$wrapper.innerHTML = "";
@@ -89,7 +91,7 @@ class CarouselModal {
             </div>
           </figure>
           <span aria-label="Suivant" class="arrow next cursor" tabindex="0" role="button"><img src="assets/images/icons/chevron-right-solid.svg"></span>
-          <span class="close-btn cursor" tabindex="0" role="button"><img src="assets/images/icons/xmark-solid.svg"><span>
+          <span tabindex="0" role="button"><img class="close-btn close-btn--carousel" src="assets/images/icons/xmark-solid.svg"><span>
         </div>
       `;
 
@@ -104,7 +106,7 @@ class CarouselModal {
             <span class="caption">${title}</span> 
           </div>
           <span aria-label="Suivant" class="arrow next cursor" tabindex="0" role="button"><img src="assets/images/icons/chevron-right-solid.svg"></span>
-          <span class="close-btn cursor" tabindex="0" role="button"><img src="assets/images/icons/xmark-solid.svg"><span>
+          <span tabindex="0" role="button"><img class="close-btn close-btn--carousel" src="assets/images/icons/xmark-solid.svg"><span>
         </div>
       `;
     }

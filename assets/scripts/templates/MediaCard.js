@@ -75,7 +75,7 @@ class MediaCard {
     if(this._media.thumbnail) {  /* Si c'est une image */
       const mediaCard = `
         <figure>
-          <img class="cursor" src="${this._media.thumbnail}" alt="${this._media.title}" aria-label="photo titrée: ${this._media.title} "tabindex="0">
+          <img class="hover-shadow cursor" src="${this._media.thumbnail}" alt="${this._media.title}" aria-label="photo titrée: ${this._media.title} "tabindex="0">
           <div>
             <figcaption class="caption">${this._media.title}</figcaption>
             <div class="legend-likes" tabindex="0" role="button">
@@ -93,7 +93,7 @@ class MediaCard {
     } else if(this._media.video) {  /* Si c'est une vidéo */
       const mediaCard = `
         <div class="video-wrapper">
-          <video class="cursor" poster="${this._media.videoThumbnail}" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
+          <video class="hover-shadow cursor" poster="${this._media.videoThumbnail}" tabindex="0" aria-label="vidéo titrée: ${this._media.title}">
             <source src="${this._media.video}" type="video/mp4">
             Your browser does not support HTML video.
           </video>

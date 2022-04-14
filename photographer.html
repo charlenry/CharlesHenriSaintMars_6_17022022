@@ -20,7 +20,7 @@
     <main id="main">
       <div class="photograph-header">
         <div class="photograph-data"></div>
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
+        <button class="contact-button" id="contact-me">Contactez-moi</button>
         <div class="photograph-portrait"></div>
       </div>
       
@@ -31,36 +31,9 @@
       <div class="banner-wrapper"></div>
     </main>
 
-    <div class="modal"></div>
+    <div class="modal-wrapper"></div>
 
-    <div id="contact_modal">
-      <div class="modal-contact">
-        <header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/images/icons/close.svg" onclick="closeModal()" />
-        </header>
-        <form>
-          <div>
-            <label>Prénom</label>
-            <input type="text" >
-          </div>
-          <div>
-            <label>Nom</label>
-            <input type="text" >
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="email" >
-          </div>
-          <div>
-            <label>Votre message</label>
-            <textarea name="message" ></textarea>
-          </div>
-          <button class="contact_button">Envoyer</button>
-        </form>
-      </div>
-    </div>
-      
+
     <!-- jQuery library -->
     <script src="assets/scripts/jquery/jquery-3.6.0.js"></script>
 
@@ -88,9 +61,6 @@
 
     <!-- Api -->
     <script src=" assets/scripts/api/DataApi.js"></script>
-
-    <!-- Contact modal-->
-    <script src="assets/scripts/utils/contactForm.js"></script>
 
     <!-- Pub/Sub -->
     <script src="assets/scripts/likesHandler/Subject.js"></script>
