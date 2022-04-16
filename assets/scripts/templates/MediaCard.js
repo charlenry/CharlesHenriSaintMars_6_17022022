@@ -17,13 +17,14 @@ class MediaCard {
       this._media = media;
       this._likesSubject = likesSubject;
       this._thatPhotograherMedias = thatPhotograherMedias;
-      
+     
       this.$wrapper = document.createElement('div');
       this.$wrapper.classList.add('media-card-wrapper');
+      this.$main = document.querySelector('#main');
   }
 
   handleLikeButton() {
-    const that = this  /* this = $wrapper */
+    const that = this;  /* this = $wrapper */
     
     this.$wrapper
         .querySelector(`#coeur-${this._media.id}`)
@@ -39,8 +40,8 @@ class MediaCard {
 
         this.$wrapper
         .querySelector(`#coeur-${this._media.id}`)
-        .addEventListener('keydown', function(e) {
-          if (e.keyCode == 13) {
+        .addEventListener('keydown', (e) => {
+          if (e.key === "Enter") {
             if (this.classList.contains('liked')) {
               this.classList.remove('liked');  /* this = élément cliqué */
               that._likesSubject.fire('DEC', that._media);  /* that = $wrapper */
@@ -53,20 +54,46 @@ class MediaCard {
   }
 
   addCarouselForImg() {
+    const that = this;
+
     this.$wrapper
       .querySelector('img')
       .addEventListener('click', () => {
-        const carousel = new CarouselModal(this._media, this._thatPhotograherMedias);
+        const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
+        that.$main.ariaHidden = "true";
         carousel.render();
+      });
+
+      this.$wrapper
+      .querySelector('img')
+      .addEventListener('keydown', (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
+          that.$main.ariaHidden = "true";
+          carousel.render();
+        }
       });
   }
 
   addCarouselForVideo() {
+    const that = this;
+
     this.$wrapper
       .querySelector('video')
       .addEventListener('click', () => {
-        const carousel = new CarouselModal(this._media, this._thatPhotograherMedias);
+        const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
+        that.$main.ariaHidden = "true";
         carousel.render();
+      });
+
+      this.$wrapper
+      .querySelector('video')
+      .addEventListener('keydown', (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
+          that.$main.ariaHidden = "true";
+          carousel.render();
+        }
       });
   }
 

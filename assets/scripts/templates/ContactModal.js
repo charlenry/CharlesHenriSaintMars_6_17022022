@@ -7,22 +7,33 @@
 "use strict";
 
 class ContactModal {
-  constructor() {
+  /**
+   * @param {object} photographer
+  **/
+
+  constructor(photographer) {
+    this._photographer = photographer;
+    this._patternText = /^[^<>(){}[\]\\,.;:@&%!?§*$£µ~#^+=|"'`_]+$/;
+    this._patternEmail = /^(([^<>(){}[\]\\,.;:\s@&%!?§*$£µ~#^+=|"'`]+)(\.[^^<>(){}[\]\\,.;:\s@&%!?§*$£µ~#^+=|"'`]+)*)@(([a-zA-Z\-0-9_]+\.)+[a-zA-Z]{2,})$/;
+
     this.$wrapper = document.createElement('div');
     this.$wrapper.classList.add('modal-wrapper__contact');
+    this.$wrapper.ariaHidden = "true";
+    this.$wrapper.role = "dialog";
     this.$modalWrapper = document.querySelector('.modal-wrapper');
     this.$contactMe = document.querySelector('#contact-me');
-    
-    this.patternText = /^[^<>(){}[\]\\,.;:@&%!?§*$£µ~#^+=|"'`_]+$/;
-    this.patternEmail = /^(([^<>(){}[\]\\,.;:\s@&%!?§*$£µ~#^+=|"'`]+)(\.[^^<>(){}[\]\\,.;:\s@&%!?§*$£µ~#^+=|"'`]+)*)@(([a-zA-Z\-0-9_]+\.)+[a-zA-Z]{2,})$/;
-
-  }
+    this.$main = document.querySelector('#main');
+    }
 
   /* Au clic sur le bouton contactez-moi */
   onContactButton() {
+    const that = this;
+
     this.$contactMe.addEventListener('click', () => {
-        this.$modalWrapper.classList.add('modal-contact-on');
-        this.$wrapper.style.display = "block";
+        that.$modalWrapper.classList.add('modal-contact-on');
+        that.$wrapper.style.display = "block";
+        that.$main.ariaHidden = "true";
+        that.$wrapper.ariaHidden = "false";
       });
   }
 
@@ -40,7 +51,7 @@ class ContactModal {
 
   /*** Fonction de validation du prénom ou du nom ***/
   validateName = (field, error, event) => {
-      const patternTextResult = this.patternText.test(field.value.toString());
+      const patternTextResult = this._patternText.test(field.value.toString());
 
     if (field.value == "" || field.value.length < 3 || field.value.length > 30) { //if empty string or characters are not between 3 and 30
       error.style.visibility = "visible";  
@@ -67,7 +78,7 @@ class ContactModal {
 
   /*** Fonction de contrôle du prénom ou du nom en sortie du champ respectif ***/
   validateNameOnBlur = (field) => {
-    const patternTextResult = this.patternText.test(field.value.toString());
+    const patternTextResult = this._patternText.test(field.value.toString());
   
     if (field.value != "" && field.value.length >= 3 && field.value.length <= 30 && patternTextResult == true) {
       field.style.border = "3px solid #00FF00";
@@ -87,7 +98,7 @@ class ContactModal {
 
   /*** Fonction de validation du champ Email ***/
   validateEmail = (field, error, event) => {
-    const patternEmailResult = this.patternEmail.test(String(field.value).toLowerCase());
+    const patternEmailResult = this._patternEmail.test(String(field.value).toLowerCase());
 
     if (field.value == "" || patternEmailResult == false) { 
       error.style.visibility = "visible";  
@@ -107,16 +118,13 @@ class ContactModal {
 
   /*** Fonction de contrôle de l'email en sortie du champ ***/
   validateEmailOnBlur = (field) => {
-    const patternEmailResult = this.patternEmail.test(String(field.value).toLowerCase());
+    const patternEmailResult = this._patternEmail.test(String(field.value).toLowerCase());
   
     if (field.value != "" && patternEmailResult == true) {
       field.style.border = "3px solid #00FF00";
     }
   }
 
-
-
-  /**********************************DEBUT*****************************************************/
 
   /*** Fonction de validation du champ Message ***/
   validateMessage = (field, error, event) => {
@@ -144,8 +152,6 @@ class ContactModal {
   }
 
 
-  /****************************************FIN***********************************************/
-
   /*** Enlève les bordures vertes des champs ***/
   clearGreenBorder = () => {
     this.$firstName.style.border = "";
@@ -168,6 +174,7 @@ class ContactModal {
     console.log("Message: "+message);
   }
 
+
   /* Contrôle des données sasies */
   controlData() {
     this.$contactForm = this.$wrapper.querySelector('#contact-form');
@@ -180,7 +187,7 @@ class ContactModal {
     this.$errorEmail = this.$wrapper.querySelector("#error-email");
     this.$errorMessage = this.$wrapper.querySelector("#error-message");
 
-    
+
     /*** Contrôle du champ prénom à la saisie ***/
     this.$firstName.addEventListener("input", () => {
       this.ControlNameSeizure(this.$firstName, this.$errorFirstName);
@@ -238,19 +245,31 @@ class ContactModal {
         this.$contactForm.reset();  //reset the form
         e.preventDefault();   //prevent the modal thanks to close automatically
       }
-
     });
-
   }
 
   /* On the clic on the contact modal */
   onCloseButton() {
+    const that = this;
+
     this.$wrapper
       .querySelector('.close-btn')
       .addEventListener('click', () => {
-        this.$wrapper.style.display = "none";
-        this.$modalWrapper.classList.remove('modal-contact-on');
+        that.$wrapper.style.display = "none";
+        that.$modalWrapper.classList.remove('modal-contact-on');
+        that.$wrapper.ariaHidden = "true";
+        that.$main.ariaHidden = "false";
       });
+
+      this.$wrapper
+      .addEventListener('keydown', (e) => {
+          if (e.key === "Escape") {
+            that.$wrapper.style.display = "none";
+            that.$modalWrapper.classList.remove('modal-contact-on');
+            that.$wrapper.ariaHidden = "true";
+            that.$main.ariaHidden = "false";
+          }
+        });
   }
 
 
@@ -258,8 +277,8 @@ class ContactModal {
   createFormContact() {
     const formBody = `
       <header>
-      <h2>Contactez-moi</h2>
-      <img class="close-btn" src="assets/images/icons/close.svg">
+      <h2>Contactez-moi <br>${this._photographer.name}</h2>
+      <img tabindex="2" class="close-btn" aria-label="Fermer la fenêtre" src="assets/images/icons/close.svg">
       </header>
       <form name="contact" action="photographer.html" method="get" id="contact-form">
         <div>
@@ -268,9 +287,12 @@ class ContactModal {
             type="text"
             id="first"
             name="first"
-            minlength="2"
+            minlength="3"
             maxlength="30"
-            placeholder="Entrez votre prénom entre 3 et 30 caractères"  
+            autocomplete="given-name"
+            aria-required="true"
+            placeholder="Entrez votre prénom entre 3 et 30 caractères"
+            tabindex="2"
           />
           <span class="error" id="error-fname"></span>
         </div>
@@ -281,9 +303,12 @@ class ContactModal {
             type="text"
             id="last"
             name="last"
-            minlength="2"
+            minlength="3"
             maxlength="30"
+            autocomplete="family-name"
+            aria-required="true"
             placeholder="Entrez votre nom entre 3 et 30 caractères"
+            tabindex="2"
           />
           <span class="error" id="error-lname"></span>
         </div>
@@ -295,38 +320,36 @@ class ContactModal {
             id="email"
             name="email"
             maxlength="80"
+            autocomplete="email"
+            aria-required="true"
             placeholder="Entrez une adresse E-mail valide"
+            tabindex="2"
           />
           <span class="error" id="error-email"></span>
         </div>
 
         <div>
           <label for="message">Votre message</label>
-          <textarea name="message" id="message"></textarea>
+          <textarea name="message" id="message" tabindex="2"></textarea>
           <span class="error" id="error-message"></span>
         </div>
 
-        <input 
-          type="submit" 
+        <button
           class="contact-button" 
-          id="send-form" 
-          value="Envoyer"
-        />
+          id="send-form"
+          value="Envoyer" tabindex="2">Envoyer</button
       </form>
     `;
 
     this.$wrapper.innerHTML = formBody;
     this.$modalWrapper.appendChild(this.$wrapper);
-
     this.onContactButton();
     this.controlData();
     this.onCloseButton();
-
   }
 
   render() {
       this.createFormContact();
   }
   
-
 }

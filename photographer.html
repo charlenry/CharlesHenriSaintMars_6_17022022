@@ -13,14 +13,14 @@
   <body>
     <header>
       <a href="index.html" tabindex="-1">
-        <img src="assets/images/logo.png" class="logo" alt="Page d'accueil de FishEye" role="link" tabindex="0">
+        <img src="assets/images/logo.png" class="logo" alt="Page d'accueil de FishEye" role="link" tabindex="1">
       </a>
     </header>
   
-    <main id="main">
+    <main id="main" aria-hidden="false">
       <div class="photograph-header">
         <div class="photograph-data"></div>
-        <button class="contact-button" id="contact-me">Contactez-moi</button>
+        <div class="rectangle"></div>
         <div class="photograph-portrait"></div>
       </div>
       
@@ -30,6 +30,8 @@
 
       <div class="banner-wrapper"></div>
     </main>
+
+    <button class="contact-button" id="contact-me" tabindex="2">Contactez-moi</button>
 
     <div class="modal-wrapper"></div>
 

@@ -64,8 +64,12 @@ class Main {
       }
     });
 
-    const contactForm = new ContactModal();
-    contactForm.createFormContact();
+    photographersDataModel.forEach(photographer => {
+      if (photographer.id === photographId) {
+        const contactForm = new ContactModal(photographer);
+        contactForm.createFormContact();
+      }
+    });
 
     // Tableau des medias du photographe sélectionné
     const thatPhotograherMedias = mediasDataModel.filter(media => media.photographerId === photographId);
