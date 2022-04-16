@@ -262,6 +262,17 @@ class ContactModal {
       });
 
       this.$wrapper
+        .querySelector('.close-btn')
+        .addEventListener('keydown', (e) => {
+          if (e.key === "Enter") {
+            that.$wrapper.style.display = "none";
+            that.$modalWrapper.classList.remove('modal-contact-on');
+            that.$wrapper.ariaHidden = "true";
+            that.$main.ariaHidden = "false";
+          }
+        });
+
+      this.$wrapper
       .addEventListener('keydown', (e) => {
           if (e.key === "Escape") {
             that.$wrapper.style.display = "none";
@@ -291,10 +302,11 @@ class ContactModal {
             maxlength="30"
             autocomplete="given-name"
             aria-required="true"
-            placeholder="Entrez votre prénom entre 3 et 30 caractères"
+            aria-describedby="error-fname" 
+            placeholder="Entrez votre prénom entre 3 et 30 caractères."
             tabindex="2"
           />
-          <span class="error" id="error-fname"></span>
+          <span class="error" id="error-fname" role="alert"></span>
         </div>
 
         <div>
@@ -307,10 +319,11 @@ class ContactModal {
             maxlength="30"
             autocomplete="family-name"
             aria-required="true"
-            placeholder="Entrez votre nom entre 3 et 30 caractères"
+            aria-describedby="error-lname" 
+            placeholder="Entrez votre nom entre 3 et 30 caractères."
             tabindex="2"
           />
-          <span class="error" id="error-lname"></span>
+          <span class="error" id="error-lname" role="alert"></span>
         </div>
 
         <div>
@@ -322,22 +335,33 @@ class ContactModal {
             maxlength="80"
             autocomplete="email"
             aria-required="true"
-            placeholder="Entrez une adresse E-mail valide"
+            aria-describedby="error-email" 
+            placeholder="Entrez une adresse E-mail valide."
             tabindex="2"
           />
-          <span class="error" id="error-email"></span>
+          <span class="error" id="error-email" role="alert"></span>
         </div>
 
         <div>
           <label for="message">Votre message</label>
-          <textarea name="message" id="message" tabindex="2"></textarea>
-          <span class="error" id="error-message"></span>
+          <textarea 
+            name="message" 
+            id="message" 
+            aria-required="true" 
+            aria-invalid="true"
+            aria-describedby="error-message" 
+            placeholder="Écrivez votre message d'au moins 3 caractères." 
+            tabindex="2" 
+          /></textarea>
+          <span class="error" id="error-message" role="alert"></span>
         </div>
 
         <button
           class="contact-button" 
           id="send-form"
-          value="Envoyer" tabindex="2">Envoyer</button
+          value="Envoyer" 
+          tabindex="2"
+        />Envoyer</button>
       </form>
     `;
 

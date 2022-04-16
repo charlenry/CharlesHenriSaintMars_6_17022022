@@ -45,7 +45,7 @@ class CarouselModal {
       this.$wrapper
         .querySelector('.prev')
         .addEventListener('keydown', (e) => {
-          if (e.key === "Enter" || e.key === " ") {
+          if (e.key === "Enter") {
             that._btnType = 'prev';
             if (that._mediaIndex > 0) {
               that._mediaIndex -= 1;
@@ -92,7 +92,7 @@ class CarouselModal {
       this.$wrapper
         .querySelector('.next')
         .addEventListener('keydown', (e) => {
-          if (e.key === "Enter" || e.key === " ") {
+          if (e.key === "Enter") {
             that._btnType = 'next';
             if (that._mediaIndex < that._totalMedias - 1) {
               that._mediaIndex += 1;
@@ -155,7 +155,7 @@ class CarouselModal {
       this.$wrapper
         .querySelector('.close-btn--carousel')
         .addEventListener('keydown', (e) => {
-          if (e.key === "Enter" || e.key === " ") {
+          if (e.key === "Enter") {
             that.$modalWrapper.classList.remove('modal-carousel-on');
             that.$wrapper.remove();
             that.$wrapper.innerHTML = "";

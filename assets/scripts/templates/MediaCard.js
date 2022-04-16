@@ -67,7 +67,7 @@ class MediaCard {
       this.$wrapper
       .querySelector('img')
       .addEventListener('keydown', (e) => {
-        if (e.key === "Enter" || e.key === " ") {
+        if (e.key === "Enter") {
           const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
           that.$main.ariaHidden = "true";
           carousel.render();
@@ -89,7 +89,7 @@ class MediaCard {
       this.$wrapper
       .querySelector('video')
       .addEventListener('keydown', (e) => {
-        if (e.key === "Enter" || e.key === " ") {
+        if (e.key === "Enter") {
           const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
           that.$main.ariaHidden = "true";
           carousel.render();
