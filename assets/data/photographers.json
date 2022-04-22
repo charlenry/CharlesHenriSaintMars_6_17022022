@@ -7,7 +7,8 @@
 			"country": "UK",
 			"tagline": "Voir le beau dans le quotidien",
 			"price": 400,
-			"portrait": "MimiKeel.jpg"
+			"portrait": "MimiKeel.jpg",
+      "description": "Portait de Mimi Keel : C'est une jeune femme de type sud-américain qui regarde l'objectif de profil du côté de son épaule droite. Elle a de longs cheveux et porte une chemise blanche. On peut voir seulement son buste."
 		},
 		{
 			"name": "Ellie-Rose Wilkens",
@@ -16,7 +17,8 @@
 			"country": "France",
 			"tagline": "Capturer des compositions complexes",
 			"price": 250,
-			"portrait": "EllieRoseWilkens.jpg"
+			"portrait": "EllieRoseWilkens.jpg",
+      "description": "Portrait d'Ellie-Rose Wilkens : C'est une jeune femme de race blanche, souriante et portant des lunettes. La photo est prise de face. Elle a les cheveux teints aux couleurs de l'arc-en-ciel. Elle porte un haut rouge surmonté d'une veste jaune avec des dessins brodés. On peut voir seulement son buste."
 		},
 		{
 			"name": "Tracy Galindo",
@@ -25,7 +27,8 @@
 			"country": "Canada",
 			"tagline": "Photographe freelance",
 			"price": 500,
-			"portrait": "TracyGalindo.jpg"
+			"portrait": "TracyGalindo.jpg",
+      "description": "Portrait de Tracy Galindo : Tracy est photographié de profil. Il est de race blanche et il est barbu. Ses cheveux sont un peu bouclés. On peut voir seulement sa tête. La photo est en noir et blanc."
 		},
 		{
 			"name": "Nabeel Bradford",
@@ -34,7 +37,8 @@
 			"country": "Mexico",
 			"tagline": "Toujours aller de l'avant",
 			"price": 350,
-			"portrait": "NabeelBradford.jpg"
+			"portrait": "NabeelBradford.jpg",
+      "description": "Portrait de Nabeel Bradford : Il est photographié de profil tout en entier. Il porte un blouson noir à capuche qui recouvre sa tête. Il porte un pantalon brun et des baskets à lacets noir et blanc. Il est debout sur un terrain vague en face d'une chaîne de montagnes au moment du crépuscule. Son appareil photo sur trépied est posé devant lui en direction de la chaîne de montagnes. Il est en train d'admirer ce beau spectacle. En fin, il a d'autres effets personnels posés à côté du trépied."
 		},
 		{
 			"name": "Rhode Dubois",
@@ -43,7 +47,8 @@
 			"country": "Spain",
 			"tagline": "Je crée des souvenirs",
 			"price": 275,
-			"portrait": "RhodeDubois.jpg"
+			"portrait": "RhodeDubois.jpg",
+      "description": "Portrait de Rhode Dubois : C'est une jeune femme de race blanche aux cheveux noirs. Elle est belle et a de longs cheveux couvrant ses oreilles. Elle porte un haut noir. Elle ne sourit pas sur la photo et regarde un peu à côté. La photo est prise de face."
 		},
 		{
 			"name": "Marcel Nikolic",
@@ -52,7 +57,8 @@
 			"country": "Germany",
 			"tagline": "Toujours à la recherche de LA photo",
 			"price": 300,
-			"portrait": "MarcelNikolic.jpg"
+			"portrait": "MarcelNikolic.jpg",
+      "description": "Portrait de Marcel Nikolic : Sur la photo en noir et blanc, on aperçoit un homme de race blanche barbu et aux cheveux noir. Sa moustache est grise et il a des poils blancs sous sa lèvre inférieure. Il porte une chemise blanche. La photo est prise de face. Il tient dans les mains son appareil photo de marque Olympus qu'il est en train d'observer comme pour le régler avant de prendre une photo."
 		}
 	],
 	"media": [
@@ -63,7 +69,8 @@
 			"image": "Fashion_Yellow_Beach.jpg",
 			"likes": 62,
 			"date": "2011-12-08",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Fashion Yellow Beach' : On y voit une jeune femme brune qui porte un ensemble composé d'un bas de jogging jaune avec un sweat à capuche également jaune. Elle porte également des chaussures à talon haut de couleur blanche. Elle est debout près d'un terrain de basket. L'angle de la prise de vue va du bas vers le haut. Elle soulève un peu son sweat où l’on aperçoit le bas de son ventre."
 		},
 		{
 			"id": 8520927,
@@ -72,7 +79,8 @@
 			"image": "Fashion_Urban_Jungle.jpg",
 			"likes": 11,
 			"date": "2011-11-06",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Fashion Urban Jungle' : On y voit une jeune femme de type caucasien au milieu d'un pont, accroupie avec la jambe droite tendue et sa main droite posée sur sa jambe droite. Elle porte un bracelet argenté à son poignet gauche. Son coude gauche est posé sur son genou gauche et sa main gauche est posée sur sa joue gauche. Elle porte du rouge à lèvre et ses ongles sont fardés en bleu turquois. Elle porte un ensemble deux pièces sur lequel est dessiné des feuilles d'arbre de la forêt."
 		},
 		{
 			"id": 9025895,
@@ -81,7 +89,8 @@
 			"image": "Fashion_Pattern_on_Pattern.jpg",
 			"likes": 72,
 			"date": "2013-08-12",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Fashion Pattern on a Pattern' : On y voit une femme de race blanche habillée d'une robe à bandes multicolores comme de l'orange, du noir, du jaune, du bleu et du blanc. Elle porte une montre dorée à son poignet gauche et une bague au majeur de chaque main. Elle porte devant elle une sacoche rouge. Sa poitrine est assez ouverte et ses longs cheveux sont lâchés et couvrent son épaule gauche. Elle porte du rouge à lèvres et observe l'objectif."
 		},
 		{
 			"id": 9275938,
@@ -90,7 +99,8 @@
 			"image": "Event_WeddingGazebo.jpg",
 			"likes": 69,
 			"date": "2018-02-22",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Wedding Gazebo' : On y voit un gazebo préparé pour un mariage. Il y a des chaises blanche de part et d'autre de l'allée menant vers le gazebo. Ce gazebo e une forme circulaire avec six poteaux et un toit en forme de dôme. Sur chaque poteau sont accroché un bouquet de fleurs de différentes couleurs et des lianes de feuilles vertes qui serpentent les poteaux. Au centre du gazebo se trouve une table fleurie. La table est recouverte d'une grande nappe blanche touchant le sol. Vu de l'allée, on aperçoit derrière la table deux chaises blanches. Les poteaux du gazebo sont de couleur jaune, ainsi que la balustrade et le sol. Le dôme est de couleur grise. À l'arrière plan du gazebo, il y a des arbres aux feuilles vertes. Personne n'est présent sur la photo."
 		},
 		{
 			"id": 2053494,
@@ -99,7 +109,8 @@
 			"image": "Event_Sparklers.jpg",
 			"likes": 2,
 			"date": "2020-05-25",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Sparkles' :  On y voit une femme vue de dos et une autre femme vue de profil mais souriant à la femme vue de dos. On voit également un homme vu de profil à côté de la femme vue de dos. Cet homme porte un costume noir et une rose blanche. La femme vue de dos porte une robe grise et l'autre femme porte une robe rouge. À l'arrière plan un peu flouté, on aperçoit des lumières étincelantes. Il est possible que ce soit à l'occasion d'une fête."
 		},
 		{
 			"id": 7324238,
@@ -108,7 +119,8 @@
 			"image": "Event_18thAnniversary.jpg",
 			"likes": 33,
 			"date": "2019-06-12",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée '18th Anniversary' :  On y voit une pièce préparée pour fêter un 18ième anniversaire. On aperçoit le nombre 18 fait avec des ballons de couleur dorée. En dessous, il y a des ballons classiques de couleurs orange, rouge et jaune avec confettis dorés collés dessus. Le plafond est décoré de façon à donner l'impression de dorure. À côté du nombre 18 se trouve un lustre métallique à bordure dorée. Il y au moins deux tables recouvertes d'une nappe blanche avec des couverts installés et celle vue au premier plan a une bouteille de vin."
 		},
 		{
 			"id": 8328953,
@@ -117,8 +129,9 @@
 			"video": "Art_Wooden_Horse_Sculpture.mp4",
 			"likes": 24,
 			"date": "2011-12-08",
-			"price": 100
-		  },
+			"price": 100,
+      "description": "Description de la vidéo intitulée 'Wooden sculpture of a horse' :  On y voit un cheval de bois installé dans ce qui semble être un parc ou un square. À sa droite se trouve un autre animal de bois sur piédestal mais ce plan est flouté."
+		},
 		{
 			"id": 7502053,
 			"photographerId": 82,
@@ -126,7 +139,8 @@
 			"image": "Art_Triangle_Man.jpg",
 			"likes": 88,
 			"date": "2007-05-07",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Triangle Man' :  On y voit un mur et une porte à deux battants peint en bleu par dessus duquel il y a un graffiti supposé représenter un homme au long cou et qui a été fait avec plusieurs couleurs. Enfin, il y a un triangle équilatéral blanc par dessus tout cela."
 		},
 		{
 			"id": 8523492,
@@ -135,7 +149,8 @@
 			"image": "Art_Purple_light.jpg",
 			"likes": 24,
 			"date": "2018-05-05",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Purple Tunnel' :  On y voit un tunnel en effet de perspective avec trois barres d'éclairage au néon au plafond, des graffitis à gauche et à droite, le sol coloré en violet, le plafond est peint en noir, et en face (à la fin du tunnel) un graffiti signé MB en blanc sur fond beige. Juste après l'endroit où la photo a été prise, il y a une poubelle en gris foncé accrochée au mur de gauche. Au bout du tunnel, il y a une autre poubelle accrochée au mur de droite et peinte en gris foncé aussi."
 		},
 		{
 			"id": 75902334,
@@ -144,9 +159,9 @@
 			"image": "Art_Mine.jpg",
 			"likes": 75,
 			"date": "2019-11-25",
-			"price": 55
+			"price": 55,
+      "description": "Description de la photo intitulée 'Art Mine' : On y voit sur un mur à fond bleu cyan des graffitis de plusieurs têtes d'oiseaux peintes en rouge ou en bleu cyan avec un bec jaune."
 		},
-
 		{
 			"id": 73852953,
 			"photographerId": 925,
@@ -154,7 +169,18 @@
 			"image": "Sport_2000_with_8.jpg",
 			"likes": 52,
 			"date": "2013-02-30",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée '8 Rows' : On y voit cinq personnes, essentiellement des hommes qui sont dans une pirogue noire chacun ayant une rame alternativement à gauche ou à droite. L'arrière plan de la photo est complètement noire. Certains ont un tee-shirt blanc et d'autres un tee-shirt noir. Il en va de même pour les chaussettes. Mais tous portent un short noir."
+		},
+		{
+			"id": 73852992,
+			"photographerId": 925,
+			"title": "Butterfly Swimming",
+			"image": "Sport_Butterfly.jpg",
+			"likes": 51,
+			"date": "2013-04-15",
+			"price": 70,
+      "description": "Description de la photo intitulée 'Butterfly Swimming' : On y voit un nageur en train d'effectuer une nage papillon dans une piscine à couloir. Il porte un bonnet bleu et un bas rouge. Il a l'air très musclé."
 		},
 		{
 			"id": 92758372,
@@ -163,7 +189,8 @@
 			"image": "Fashion_Wings.jpg",
 			"likes": 58,
 			"date": "2018-07-17",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Fashion Wings' : On y voit un homme de type caucasien et une femme de type africain semblant effectuer une danse. L'homme est vêtu d'un ensemble blanc (chemise et pantalon) et d'une sandale alors que la femme porte une longue robe bleu cyan et est pieds nus. Tous les deux sont de face par rapport à l'objectif, la femme étant devant l'homme. La femme est penchée sur sa gauche et ayant la main gauche levée. L'homme quant à lui est légèrement penché sur sa droite et ayant la main droite levée. les yeux de tous les deux sont fermés. Le mur de la pièce derrière eux est peint en bleu cyan. Le sol semble être fait de terre."
 		},
 		{
 			"id": 32958383,
@@ -172,7 +199,8 @@
 			"image": "Fashion_Melody_Red_on_Stripes.jpg",
 			"likes": 11,
 			"date": "2019-08-12",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Melody Red on Stripes' : On y voit une jeune femme de type africain habillée d'une robe rouge et portant une paire de lunettes teintées. Elle porte également des boucles d'oreille ainsi que montre au poignet gauche. Elle regarde l'objectif et ne sourit pas. Elle est en train d'écarter le bas de sa robe à gauche et à droite. Le bas de la robe semble être fait d'un empilement de voiles transparents. En effet, on voit sur sa gauche la transparence de la voile de dessus. Elle porte une paire de baskets blanche avec des lacets et des semelles épaisses à bandes noires et blanches. Elle semble descendre les marches d'un escalier près d'une maison."
 		},
 		{
 			"id": 928587383,
@@ -181,7 +209,8 @@
 			"image": "Event_VentureConference.jpg",
 			"likes": 2,
 			"date": "2019-01-02",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Venture Conference' : On y voit cinq personnes  dans une salle de travail. Quatre sont assises autour d'une table et une est debout devant un tableau avec des post-it de plusieurs couleurs collés dessus. La personnes devant le tableau est une femme de type asiatique portant des lunettes, un tee-shirt blanc et jean bleu. Elle est en train de regarder les post-it avec le bras droit levé et semblant expliquer quelque chose aux quatre autres personnes dont trois d'entre elles (deux à gauche de la table et un à droite de la table) regardent ce qu'elle est en train d'expliquer. La quatrième personne à droite de la table (une femme) est en train d'écrire sur un post-it orange. Les quatre personnes assises autour de la table sont de race blanche : un homme et une femme à gauche et de même à droite. Sur la table de couleur blanche, chacun est doté d'un ordinateur portable, avec un bloc de post-it soit rose ou orange ou jaune, et au moins d'un stylo. On peut apercevoir également un cahier et un livre ouvert, ainsi que deux téléphones portables qui semblent appartenir aux personnes de droite. Trois personnes sur quatre assises à la table portent un haut noir et une porte un haut noir et jaune (la femme écrivant sur le post-it orange)."
 		},
 		{
 			"id": 725639493,
@@ -190,7 +219,8 @@
 			"image": "Event_ProductPitch.jpg",
 			"likes": 3,
 			"date": "2019-05-20",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Product Pitch' : On y voit 8 hommes dans une pièce avec des fauteuils, des chaises, des tables et quatre écrans dont deux sont allumés. Sept d'entre eux sont assis à écouter le huitième qui semble expliquer quelque chose avec un poisson noir en plastique. Ils ont tous l'air décontracté et sont habillés avec tee-shirt ou chemise et bermuda ou pantalon. Il sont tous de race blanche. Sur les deux écrans allumés, il y a écrit et je cite : 'Proof all hands - 4/24/2019'. Un logo est placé à côté du texte. "
 		},
 		{
 			"id": 23394384,
@@ -199,7 +229,8 @@
 			"image": "Event_KeyboardCheck.jpg",
 			"likes": 52,
 			"date": "2019-07-18",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Musical Festival Keyboard' : Sur une photo en noir et blanc, on y voit un homme (probablement de type caucasien) aux grands cheveux, habillé tous de noir, assis devant un synthétiseur et semblant pianoter dessus. Sur le synthétiseur, il est écrit et je cite : 'nord stage 2'."
 		},
 		{
 			"id": 87367293,
@@ -208,7 +239,8 @@
 			"image": "Event_Emcee.jpg",
 			"likes": 23,
 			"date": "2018-02-22",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Musical Festival Singer' : On y voit une femme de type africain en train de chanter avec un micro. Elle est habillée d'un haut à franges avec des bandes horizontales tantôt blanches, tantôt beiges. Elle porte un jean bleu foncé déchiré aux genoux. Elle semble être sur un podium. Au fond du podium, une map monde semble indiqué que l'évènement est international. On peut également apercevoir un crane avec des os en forme de croix dessinés sur fond noir. "
 		},
 		{
 			"id": 593834784,
@@ -217,7 +249,8 @@
 			"image": "Animals_Majesty.jpg",
 			"likes": 52,
 			"date": "2017-03-13",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Animal Majesty' : On y voit un cerf brun dans la savane qui regarde l'objectif. Son bois sur la tête lui donne un air majestueux."
 		},
 		{
 			"id": 83958935,
@@ -226,7 +259,8 @@
 			"video": "Animals_Puppiness.mp4",
 			"likes": 52,
 			"date": "2016-06-12",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Cute puppy on sunset' : On y voit un petit chien noir et blanc sur une plage attaché avec une laisse rouge avec laquelle il est en train de jouer. Cela se passe au moment d'un coucher du soleil."
 		},
 		{
 			"id": 394583434,
@@ -235,7 +269,8 @@
 			"video": "Travel_Rock_Mountains.mp4",
 			"likes": 23,
 			"date": "2017-03-18",
-			"price": 45
+			"price": 45,
+      "description": "Description de la vidéo intitulée 'Rocky mountains from the air' : On y voit le survol du sommet des montagnes rocheuses avec un dénivelé gris à gauche et un dénivelé brun à droite. On aperçoit également à droite des personnes faisant une randonnée en suivant une trace."
 		},
 		{
 			"id": 343423425,
@@ -244,7 +279,8 @@
 			"image": "Travel_Outdoor_Baths.jpg",
 			"likes": 101,
 			"date": "2017-04-03",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Outdoor Baths' : On y voit un lac bleu pâle fumante près d'une montagne où des hommes et des femmes sont en train de se baigner. "
 		},
 		{
 			"id": 73434243,
@@ -253,7 +289,18 @@
 			"image": "Travel_Road_into_Hill.jpg",
 			"likes": 99,
 			"date": "2018-04-30",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Road into the Hill' : On y voit une route sinueuse en perspective formant plusieurs S au travers d'une vallée. "
+		},
+		{
+			"id": 73534241,
+			"photographerId": 527,
+			"title": "Road to the Canyon",
+			"image": "Travel_On_the_Road.jpg",
+			"likes": 100,
+			"date": "2018-08-05",
+			"price": 45,
+      "description": "Description de la photo intitulée 'Road to the Canyon' : On y voit un fourgon jaune destiné à l'exploration sur une route conduisant à un canyon en Arizona. À gauche et à droite de la chaussée, on aperçoit de grands rochers rouges avec des formes particulières comme si ils avaient été sculptés. Sur la droite, on peut apercevoir des voitures stationnées près du canyon."
 		},
 		{
 			"id": 23425523,
@@ -262,7 +309,8 @@
 			"image": "Travel_Bridge_into_Forest.jpg",
 			"likes": 34,
 			"date": "2016-04-05",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Bridge into the Forest' : On y voit un pont formant une courbe au beau milieu de la forêt."
 		},
 		{
 			"id": 23134513,
@@ -271,7 +319,8 @@
 			"image": "Travel_Boat_Wanderer.jpg",
 			"likes": 23,
 			"date": "2017-03-18",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Boat Wonderer' : On y voit un canot en bois au beau milieu d'un fleuve à l'eau turquoise. La photo a été prise depuis ce canot. On aperçoit à gauche et à droite des arbres ressemblant à  des sapins. En face, on voit de hauts rochers gris. Il y a aussi un autre canot droit devant."
 		},
 		{
 			"id": 92352352,
@@ -280,7 +329,8 @@
 			"image": "Portrait_Sunkissed.jpg",
 			"likes": 66,
 			"date": "2018-05-24",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Portrait Sunkiss' : On y voit le portrait d'une femme blanche souriante aux cheveux roux et aux yeux marron, avec un rouge à lèvre. Elle porte des boucles d'oreille. Elle a le visage quelque peu tacheté."
 		},
 		{
 			"id": 34513453,
@@ -289,7 +339,8 @@
 			"image": "Portrait_Shaw.jpg",
 			"likes": 52,
 			"date": "2017-04-21",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Shaw Potrait' : On y voit le portrait d'un homme de type africain fixant le regard en haut vers sa gauche et qui souris un peu. Il est moustachu et porte une coiffe afro. Il porte une chaîne autour du cou posée sur un haut noir. La photo est en noir et blanc. L'arrière plan de la photo est complètement noir."
 		},
 		{
 			"id": 23523533,
@@ -298,7 +349,8 @@
 			"image": "Portrait_Alexandra.jpg",
 			"likes": 95,
 			"date": "2018-11-02",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Alexandra' : On y voit le portrait d'une jeune fille de type africain sur une photo noir et blanc. Elle a les cheveux et les sourcils teints en blanc. Elle a les yeux clairs. Elle porte un haut blanc. L'arrière plan a un dégradé entre gris pâle et gris froncé."
 		},
 		{
 			"id": 525834234,
@@ -307,9 +359,9 @@
 			"image": "Portrait_AfternoonBreak.jpg",
 			"likes": 25,
 			"date": "2019-01-02",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Afternoon Break' : Sur une photo noir et blanc, on y voit le portrait d'un vieil homme de type indien regardant l'objectif avec une cigarette à la main gauche. Il porte un polo blanc."
 		},
-
 		{
 			"id": 623534343,
 			"photographerId": 243,
@@ -317,7 +369,8 @@
 			"image": "Travel_Lonesome.jpg",
 			"likes": 88,
 			"date": "2019-02-03",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Travel Lonesome': Il y a une femme de type caucasien debout seule sur un gros rocher élevé avec un sac au dos et admirant un relief montagneux et verdoyant. Les rayons du soleil font apparaître un effet d'ombre et lumière sur le relief et la verdure. Cette femme a l'air minuscule face à l'immensité du relief."
 		},
 		{
 			"id": 625025343,
@@ -326,16 +379,18 @@
 			"image": "Travel_HillsideColor.jpg",
 			"likes": 85,
 			"date": "2019-04-03",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Hillside Color' : Il y a un amoncellement de logements sociaux construits à flanc de falaise. Chaque groupe de logement est peint dans une couleur différente telle que le rose, le jaune, le rouge, le violet, le vert, le blanc. Au pied des logements, il y a un aménagement pour des touristes afin qu'ils puissent s'asseoir mais aussi aller se baigner dans la mer qui se trouve en contre-bas. Les rochers sur lesquels a été bâtit l'aménagement sont de couleur verdâtre. Il y a des vacanciers assis pour prendre un bain de soleil et admirer le paysage. Enfin, il y a aussi quelques canots amarrés dans la baie à proximité des touristes."
 		},
 		{
 			"id": 2525345343,
 			"photographerId": 243,
-			"title": "Wednesday Potrait",
+			"title": "Wednesday Portrait",
 			"image": "Portrait_Wednesday.jpg",
 			"likes": 34,
 			"date": "2019-04-07",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Wednesday Portrait' : Il y a une petite fille de type caucasien couchée sur le ventre, tenant ses joues avec ses mains et faisant une grimace avec sa bouche, donnant ainsi l'impression qu'elle s'ennuie. Elle est habillée d'un pull pour le haut. On ne peut pas voir ce qu'elle porte pour le bas. La photo est en noir et blanc et a été prise de face."
 		},
 		{
 			"id": 2523434634,
@@ -344,7 +399,8 @@
 			"image": "Portrait_Nora.jpg",
 			"likes": 63,
 			"date": "2019-04-07",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Nora Portrait': Il y a une demoiselle de type africaine à la peau foncée qui regarde fixement l'objectif de face et qui porte des lunettes rondes ainsi qu'une paire de boucles d'oreille. Elle semble ne pas porter de haut. Elle est assise sur le côté d'une chaise capitonnée rouge et elle s'appuie sur le dossier de la chaise, une main posée sur l'autre. Elle a l'air sérieuse. Derrière elle, il y a un panneau avec des barres lumineux jaune et blanc semblant vouloir écrire quelque chose. Mais on en voit qu'une partie. Aussi, le panneau est peint en bleu foncé, en noir et en rouge."
 		},
 		{
 			"id": 398847109,
@@ -353,7 +409,8 @@
 			"image": "Portrait_Background.jpg",
 			"likes": 55,
 			"date": "2019-06-20",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo intitulée 'Raw Black Portrait' : C'est une photo en noir et blanc où une femme de race blanche regarde l'objectif de face, la tête penchée eb arrière. Cela donne l'impression qu'elle est couché sur le dos. Sa bouche est entre ouverte et on aperçoit ses dents de devant de la machoire supérieure. Elle porte probablement un haut noir. Il y a comme un effet d'ombre et lumière où sa tête et sa gorge sont bien éclairées mais tout le reste est du noir absolu."
 		},
 		{
 			"id": 2534342,
@@ -362,7 +419,8 @@
 			"image": "Event_SeasideWedding.jpg",
 			"likes": 25,
 			"date": "2019-06-21",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo ibtitulée 'Seaside Wedding' : Il y a une table de réception d'au moins seize places avec des couverts placés et des chaises. Mais il n'y a encore de personne à table. La table semble être placée sur une plage. Non loin de la table, il y a un poteau qui soutient des guirlandes. Le titre de la photo suggère que c'est un repas en rapport avec un mariage."
 		},
 		{
 			"id": 65235234,
@@ -371,7 +429,8 @@
 			"image": "Event_PintoWedding.jpg",
 			"likes": 52,
 			"date": "2019-06-25",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo 'Boulder Wedding' : On y voit un couple de jeunes mariés de race blanche qui s'enlace mutuellement, front contre front, souriant l'un à l'autre. La femme porte une jolie robe de mariée blanche avec manches longues et broderie, alors que le mari porte un beau complet noir. On aperçoit un col blanc dépassant la veste du mari. Le couple est debout parmi des rochers verdâtres. L'endroit est bien ensoleillé. Dans l'arrière plan, on aperçoit des arbres."
 		},
 		{
 			"id": 23523434,
@@ -380,7 +439,8 @@
 			"image": "Event_BenevidesWedding.jpg",
 			"likes": 77,
 			"date": "2019-06-28",
-			"price": 45
+			"price": 45,
+      "description": "Description de la photo 'Benevides Wedding' : On y voit un couple de jeunes mariés de race blanche dont le mari est en train de tenir sa femme à la taille qui est un peu à la renverse. La mariée a sa main droite posée contre la poitrine de son mari et sa main gauche le tient par le cou. Le couple se sourit mutuellement. La mariée porte une jolie robe de mariée décolletée et sans manches. Elle porte une voile blanche avec broderie dans les cheveux qui pend en arrière. Elle a également des barrettes en forme de roses blanches à l'avant des cheveux. Le mari porte un complet noir avec une chemise rosâtre. Le couple se trouve dans une allée et il y a de nombreuses chaises blanches de part et d'autre de l'allée. Mais il n'y pas personne assis sur les chaises. Dans l'environnement, il y a des arbres sur lesquels une débauche de guirlandes jaunes et blancs ont été installées, ainsi que de deux grandes voiles blanches en forme de toit de maison au dessus de l'allée."
 		},
 		{
 			"id": 5234343,
@@ -389,8 +449,9 @@
 			"video": "Animals_Wild_Horses_in_the_mountains.mp4",
 			"likes": 142,
 			"date": "2019-08-23",
-			"price": 60
-		  },
+			"price": 60,
+      "description": "Description de la vidéo intitulée 'Wild horses in the mountains' : On y voit un troupeau de chevaux noirs, bruns, beiges et blancs qui se déplace comme un seul. Ils semblent sauvages mais sont dirigés par des gardiens de troupeaux. Ils sont situés non loin d'une zone montagneuse plus ou moins enneigée."
+		},
 		{
 			"id": 95234343,
 			"photographerId": 243,
@@ -398,9 +459,9 @@
 			"image": "Animals_Rainbow.jpg",
 			"likes": 59,
 			"date": "2019-07-02",
-			"price": 60
+			"price": 60,
+      "description": "Description de la photo 'Rainbow Bird' : On y voit un oiseau multicolore posé sur une branche. Ses couleurs chatoyantes font penser aux couleurs de l'arc-en-ciel."
 		},
-
 		{
 			"id": 52343416,
 			"photographerId": 195,
@@ -408,7 +469,8 @@
 			"image": "Travel_Tower.jpg",
 			"likes": 25,
 			"date": "2019-04-03",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 2523434,
@@ -417,7 +479,8 @@
 			"image": "Travel_SunsetonCanals.jpg",
 			"likes": 53,
 			"date": "2019-05-06",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 95293534,
@@ -426,7 +489,8 @@
 			"image": "Travel_OpenMountain.jpg",
 			"likes": 33,
 			"date": "2019-05-12",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 356234343,
@@ -435,7 +499,8 @@
 			"image": "Travel_Bike_and_Stair.jpg",
 			"likes": 53,
 			"date": "2019-06-20",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 235234343,
@@ -444,7 +509,8 @@
 			"image": "Travel_Adventure_Door.jpg",
 			"likes": 63,
 			"date": "2019-06-26",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 6234234343,
@@ -453,7 +519,8 @@
 			"image": "Architecture_Contrast.jpg",
 			"likes": 52,
 			"date": "2019-06-30",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 6525666253,
@@ -462,7 +529,8 @@
 			"image": "Architecture_On_a_hill.jpg",
 			"likes": 63,
 			"date": "2019-07-20",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 98252523433,
@@ -471,7 +539,8 @@
 			"image": "Architecture_Dome.jpg",
 			"likes": 88,
 			"date": "2020-01-05",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 9259398453,
@@ -480,8 +549,9 @@
 			"video": "Architecture_coverr_circle_empty_highway_in_buenos_aires_587740985637.mp4",
 			"likes": 57,
 			"date": "2020-01-20",
-			"price": 65
-		  },
+			"price": 65,
+      "description": ""
+		},
 		{
 			"id": 3523523534,
 			"photographerId": 195,
@@ -489,17 +559,19 @@
 			"image": "Architecture_Corner_Room.jpg",
 			"likes": 54,
 			"date": "2020-05-05",
-			"price": 60
+			"price": 60,
+      "description": ""
 		},
 		{
 			"id": 952343423,
 			"photographerId": 930,
-			"title": "Tricks in te air",
+			"title": "Tricks in the air",
 			"video": "Sport_Tricks_in_the_air.mp4",
 			"likes": 150,
 			"date": "2018-02-30",
-			"price": 70
-		  },
+			"price": 70,
+      "description": "Description de la vidéo intitulée 'Tricks in the air' : On y voit une jeune femme faire une voltige à l'aide d'une sangle retenant son poignet depuis le plafond. Elle est habillée d'une brassière et d'un legging noir. Elle semble se trouver dans un gymnase."
+		},
 		{
 			"id": 235234343,
 			"photographerId": 930,
@@ -507,7 +579,8 @@
 			"image": "Sport_Next_Hold.jpg",
 			"likes": 101,
 			"date": "2018-03-05",
-			"price": 65
+			"price": 65,
+      "description": "Description de la photo intitulée 'Climber' : On y voit une femme brune qui tente de grimper un rocher à mains nus. Sa jambe gauche surélevée et sa main gauche sonr posées dans une crevasse du rocher. Sa main droite est agripée à une autre crevasse du rocher plus en hauteur. Quant à sa jambe droite, elle est en lévitation par rapport au sol. Une poudre verdâtre est posée à différentes crevasses du rocher y compris sur son sommet. Elle est habillée d'un short noir, d'un tee-shirt vert foncé ainsi que de chaussures de couleurs bleues, noires, vert et des scratchs oranges et verts. Enfin, elle porte également des lunettes. Ses cheveux un peu longs sont lâchés."
 		},
 		{
 			"id": 235343222,
@@ -516,7 +589,8 @@
 			"image": "sport_water_tunnel.jpg",
 			"likes": 103,
 			"date": "2018-03-10",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Surfer' : On y voit un surfeur, accroupi sur sa planche de couleurs blanche, jaune et bleue, au creux d'une vague d'une mer bleue turquoise. Il est vêtu d'un tee-shirt blanc et d'un short noir avec des chaussures noires. Il porte une montre noire au poignet gauche. Il est probablement caucasien et l'eau de vague empêche de voir pleinement son visage."
 		},
 		{
 			"id": 7775342343,
@@ -525,7 +599,8 @@
 			"image": "Sport_Sky_Cross.jpg",
 			"likes": 77,
 			"date": "2018-04-16",
-			"price": 50
+			"price": 50,
+      "description": "Description de la photo intitulée 'Skier' : On y voit un skieur en lévitation par rapport au sol chaussé de ses patins de ski. Ses bâtons de ski sont portés vers le haut. Vue du bas, ses patins de ski forment une croix et sont de couleur grise avec pour inscription 'Atomic' en jaune ainsi que quelques rayures vertes. Il est habillé d'une doudoune brune et d'un bas rouge et blanc et de gans noirs et blancs. Il porte aussi un sac au dos noir ayant pour inscription 'ABS' écrite en blanc. Enfin, il porte un casque rouge, jaune et vert ainsi que des lunettes de ski à liseré jaune. Dans son environnement, le ciel est bleu et il se trouve au dessus d'une colline enneigée."
 		},
 		{
 			"id": 9253445784,
@@ -534,7 +609,8 @@
 			"image": "Sport_Race_End.jpg",
 			"likes": 88,
 			"date": "2018-04-22",
-			"price": 65
+			"price": 65,
+      "description": "Description de la photo intitulée 'Race End' : On y voit une course de vitesse de cinq femmes de différentes nationalités tendues en avant pour gagner la course. Cela se passe dans un stade. Elles sont vêtues d'un short noir et d'un tee-shirt au couleur de leur équipe. Elle portent un dossard numéroté devant et derrière, ainsi qu'un numéro de rang sur leur short. Elles portent toutes des baskets."
 		},
 		{
 			"id": 22299394,
@@ -543,7 +619,8 @@
 			"image": "Sport_Jump.jpg",
 			"likes": 95,
 			"date": "2018-04-27",
-			"price": 70
+			"price": 70,
+      "description": "Description de la photo intitulée 'Jump!' : On y voit une plage sur laquelle est installé une piste à skateboard avec deux skateboarders en plein action d'acrobatie. l'un d'entre eux est en lévitation ainsi que son skateboard complètement détaché de lui. Le second qui est à un niveau en dessous du premier est en train de l'observer. Le premier est torse nu avec un pantalon noir et des chaussures noires. Le second porte un bermuda gris et une chemise à carreaux ainsi qu'un chapeau gris. À l'arrière plan, on voit un homme de bout au bord de la piste un peu surélevé ainsi que des femmes assises dans le sable en train d'observer."
 		},
 		{
 			"id": 3452342633,
@@ -552,7 +629,8 @@
 			"image": "Architecture_White_Light.jpg",
 			"likes": 52,
 			"date": "2018-05-03",
-			"price": 75
+			"price": 75,
+      "description": "Description de la photo intitulée 'White Light' : On y voit l'intérieur d'un bâtiment peint en blanc dont la forme est circulaire et le plafond est en forme de dôme. Les trois étages semblent former un filetage. Des lumières blanches sont placées à la base du dôme tout au tour. On aperçoit des personnes debout à chaque étage."
 		},
 		{
 			"id": 939234243,
@@ -561,7 +639,8 @@
 			"image": "Architecture_Water_on_Modern.jpg",
 			"likes": 55,
 			"date": "2018-05-10",
-			"price": 72
+			"price": 72,
+      "description": "Description de la photo intitulée 'Water on Modern Building' : On y voit le toit d'un bâtiment moderne de couleur brun qui semble former un entonnoir. On aperçoit un bassin d'eau au premier plan de la photo. Au delà du bassin d'eau, le toit a la forme d'une main vu de profil côté du pouce ouvert. Cette main semble tenir l’entonnoir entre le pouce et l’index. Les lignes croisées dessinées sur le toit mettent en valeur cette impression de volume."
 		},
 		{
 			"id": 222959233,
@@ -570,7 +649,8 @@
 			"image": "Architecture_Horseshoe.jpg",
 			"likes": 85,
 			"date": "2018-05-15",
-			"price": 71
+			"price": 71,
+      "description": "Description de la photo intitulée 'Horseshoe' : On y voit une tour noire en forme de sabot de cheval vu du bas. À la surface du bâtiment, il y a comme des rails de trains superposés les uns sur les autres verticalement et suivent les courbes du bâtiment. Chaque paire de rails représente un étage du bâtiment. On peut compter onze paires de rails. On en déduit qu’il y a au moins onze étages dans cette tour."
 		},
 		{
 			"id": 965933434,
@@ -579,7 +659,8 @@
 			"image": "Architecture_Cross_Bar.jpg",
 			"likes": 66,
 			"date": "2018-05-20",
-			"price": 58
+			"price": 58,
+      "description": "Description de la photo intitulée 'Cross Bar' : On y voit deux tours en verre jaune qui se font face et qui sont identiques. Les armatures délimitant les étages sont apparents et forment des lignes horizontales à chaque étage. Vu du bas, les deux tours semblent former une croix."
 		},
 		{
 			"id": 777723343,
@@ -588,7 +669,8 @@
 			"image": "Architecture_Connected_Curves.jpg",
 			"likes": 79,
 			"date": "2018-05-21",
-			"price": 80
+			"price": 80,
+      "description": "Description de la photo intitulée 'Connected Curves' : On y voit un bâtiment peint en bleu avec des bandes géométriques curvilignes. Le bâtiment est fait de deux parties reliées à leur sommet par une sorte de pont également curviligne. Le bas du pont est peint en blanc."
 		}
 	]
 }

@@ -20,6 +20,7 @@ class MediaDataModel {
     this._likes = media.likes;
     this._date = media.date;
     this._price = media.price;
+    this._description = media.description;
   }
 
   get id() {
@@ -67,6 +68,15 @@ class MediaDataModel {
     }
   }
 
+  get videoSubtitle() {
+    if (this._video != undefined) {
+      let videoName = this._video.slice(0, -4);
+      return `assets/vtts/${videoName}.vtt`;
+    } else {
+      return '';
+    }
+  }
+
   get mediaFile() {
     if (this._image != undefined) {
       return `assets/images/photos/${this._image}`;
@@ -85,6 +95,10 @@ class MediaDataModel {
   
   get price() {
     return this._price;
+  }
+
+  get description() {
+    return this._description;
   }
 }
 

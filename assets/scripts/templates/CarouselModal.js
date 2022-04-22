@@ -123,9 +123,9 @@ class CarouselModal {
 
   selectMedia() {
     if (this._thatPhotograherMedias[this._mediaIndex].image) {
-      this.displayMedia('img', this._thatPhotograherMedias[this._mediaIndex].image, this._thatPhotograherMedias[this._mediaIndex].title);
+      this.displayMedia('img', this._thatPhotograherMedias[this._mediaIndex].image, this._thatPhotograherMedias[this._mediaIndex].title, this._thatPhotograherMedias[this._mediaIndex].description);
     } else if (this._thatPhotograherMedias[this._mediaIndex]._video) {
-      this.displayMedia('video', this._thatPhotograherMedias[this._mediaIndex].video, this._thatPhotograherMedias[this._mediaIndex].title);
+      this.displayMedia('video', this._thatPhotograherMedias[this._mediaIndex].video, this._thatPhotograherMedias[this._mediaIndex].title, this._thatPhotograherMedias[this._mediaIndex].description, this._thatPhotograherMedias[this._mediaIndex].videoSubtitle);
     }
   }
 
@@ -178,7 +178,7 @@ class CarouselModal {
   }
 
 
-  displayMedia(type, media, title) {
+  displayMedia(type, media, title, description, videoSubtitle) {
     let carouselItem ;
 
     if(type === 'img') {  /* Si c'est une image */
@@ -186,7 +186,7 @@ class CarouselModal {
         <div class="carousel">
           <span aria-label="Média Précédent" class="arrow prev cursor" tabindex="0" role="button"><img src="assets/images/icons/chevron-left-solid.svg"></span>
           <figure>
-            <img src="${media}" alt="${title}" aria-label="photo titrée: ${title} "tabindex="0">
+            <img src="${media}" aria-label="${description}" alt="${title}" aria-label="photo titrée: ${title} "tabindex="0">
             <div>
               <figcaption class="caption">${title}</figcaption>
             </div>
@@ -200,8 +200,12 @@ class CarouselModal {
       carouselItem = `
         <div class="carousel">
           <span aria-label="Média Précédent" class="arrow prev cursor" tabindex="0" role="button"><img src="assets/images/icons/chevron-left-solid.svg"></span>
-          <video src="${media}" type="video/mp4" controls tabindex="0" aria-label="vidéo titrée: ${title}">
-            Your browser does not support HTML video.
+          <video src="${media}" type="video/mp4" controls tabindex="0" aria-label="${description}">
+            <!-- Subtitle files -->
+            <track kind="captions" label="Français" srclang="fr" src="${videoSubtitle}" default>
+            
+            <!-- Fallback for browsers that don't support the <video> element -->          
+            <a href="${media}" download>Your browser does not support HTML video - Download the video here</a>
           </video>
           <div>
             <span class="caption">${title}</span> 
@@ -214,10 +218,16 @@ class CarouselModal {
 
     this.$wrapper.innerHTML = carouselItem;
 
-    if (this._btnType === 'prev') {
+  /*  if (this._btnType === 'prev') {
       this.previousBtnFocus();
     } else if (this._btnType === 'next') {
       this.nextBtnFocus();
+    } */
+
+    if(type === 'img') {
+      this.$wrapper.querySelector('.carousel figure img').focus();
+    } else if(type === 'video') {
+      this.$wrapper.querySelector('.carousel video').focus();
     }
 
     this.onPreviousMedia();
@@ -228,9 +238,9 @@ class CarouselModal {
 
   createCarousel() {
     if(this._media.image) {  /* Si c'est une image */
-    this.displayMedia('img', this._media.image, this._media.title);
+    this.displayMedia('img', this._media.image, this._media.title, this._media.description);
     } else if(this._media.video) {  /* Si c'est une vidéo */
-    this.displayMedia('video', this._media.video, this._media.title);
+    this.displayMedia('video', this._media.video, this._media.title, this._media.description, this._media.videoSubtitle);
     }
 
     this.$modalWrapper.classList.add('modal-carousel-on');
