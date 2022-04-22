@@ -19,6 +19,7 @@ class PhotographerDataModel {
     this._tagline = data.tagline;
     this._price = data.price;
     this._portrait = data.portrait;
+    this._description = data.description;
   }
 
   get name() {
@@ -52,6 +53,11 @@ class PhotographerDataModel {
   get thumbnail() {
     return `assets/images/photographers/thumbnails/${this._portrait}`;
   }
+
+  get description() {
+    return this._description;
+  }
+
 }
 
 //export default PhotographerDataModel;

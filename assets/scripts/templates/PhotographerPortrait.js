@@ -19,9 +19,12 @@ class PhotographerPortrait {
       src: `${this._photographer.portrait}`, 
       alt: `Photo de ${this._photographer.name}`,
       role: 'img',
-      tabindex: '0'
+      tabindex: '0',
+      'aria-label': `${this._photographer.description}`
     });
-    
+
+  //  $img.attr('ariaLabel', `${this._photographer.description}`);
+
     return $img;
   }
 }

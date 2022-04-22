@@ -288,7 +288,7 @@ class ContactModal {
   createFormContact() {
     const formBody = `
       <header>
-      <h2>Contactez-moi <br>${this._photographer.name}</h2>
+      <h2 tabindex="2">Contactez-moi <br>${this._photographer.name}</h2>
       <img tabindex="2" class="close-btn" aria-label="Fermer la fenêtre" src="assets/images/icons/close.svg">
       </header>
       <form name="contact" action="photographer.html" method="get" id="contact-form">
