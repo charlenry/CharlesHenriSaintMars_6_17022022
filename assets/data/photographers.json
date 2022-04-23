@@ -470,17 +470,17 @@
 			"likes": 25,
 			"date": "2019-04-03",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Japanese Tower, Kyoto' : On y voit au premier plan une rue en pente descendante qui semble être piétonne et dans laquelle deux femmes japonaises sont debout et semble regarder quelque chose ensemble. Elle sont vues de dos et celle qui est à gauche porte un kimono bleu fleuri avec des chaussures bleues et une fleur rouge dans ses cheveux à sa droite. L'autre femme porte un kimono fleuri violet avec des chaussures bleues et 3 roses rouges dans ses cheveux à sa gauche. Plus loin dans la rue, on aperçoit d'autres personnes qui vont et qui viennent. Toutes les maisons à gauche comme à droite sont faites en bois. Les arbres sont sans feuilles et le sol est humide. Les lampes allumées et le ciel partiellement orangé mais relativement couvert. Un peu plus loin, on voit une grande tour en bois à l'architecture japonaise."
 		},
 		{
 			"id": 2523434,
 			"photographerId": 195,
-			"title": "Senset on Canals, Venice",
+			"title": "Sunset on Canals, Venice",
 			"image": "Travel_SunsetonCanals.jpg",
 			"likes": 53,
 			"date": "2019-05-06",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Sunset on Canals, Venice' : On y voit un fleuve avec des immeubles à plusieurs étages de part et d'autre du fleuve. Les immeubles sont peintes en blanc ou en beige ou en rouge. On voit des gondoles (bateaux) en circulation. Sur le côté gauche, il y a un trottoir où des gens sont debout. Sur le côté droit, il n'y a pas de trottoir. Cela semble se passer au coucher du soleil."
 		},
 		{
 			"id": 95293534,
@@ -490,7 +490,7 @@
 			"likes": 33,
 			"date": "2019-05-12",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Mountain and Lake' : On y voit une photo prise depuis un grand lac à l'eau clair mais qui a le reflet de son environnement comme dans un miroir. Autour du lac, il y a une végétation dense et touffue avec de très grands arbres. Plus loin devant, on aperçoit quelques chalets. Derrière ces chalets et toute la végétation, il y a un très haut volcan. Tout cela se reflète dans le lac et lui donne une couleur verdâtre."
 		},
 		{
 			"id": 356234343,
@@ -500,7 +500,7 @@
 			"likes": 53,
 			"date": "2019-06-20",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'City Bike and Stair, Paris' : On y voit un vélo noir vu de profil avec un panier marron placé devant le guidon. Le vélo est posé sur une rampe d'escalier dans une zone piétonne. Derrière le vélo, on voit un lampadaire d'extérieur, peint en marron, fixé au centre du pied de l'escalier. Derrière le lampadaire, on voit un immeuble d'habitation à plusieurs étage peint en beige avec quelques bacons fleuris. Il y a au moins 8 fenêtres visibles dont deux sont ouvertes."
 		},
 		{
 			"id": 235234343,
@@ -510,7 +510,7 @@
 			"likes": 63,
 			"date": "2019-06-26",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Adventure Door, Indiais' : On y voit un cadre de porte à l'architecture orientale c'est-à-dire que le haut du cadre est un forme de demi-cercle avec ornement en dents de scie. Il y a un ornement mosaïque sur les deux tiers supérieures des murs d'alentour. Au travers du cadre de porte, on aperçoit une ville en contrebas. Au delà de la ville, on aperçoit une montagne dans un ciel laiteux."
 		},
 		{
 			"id": 6234234343,
@@ -520,7 +520,7 @@
 			"likes": 52,
 			"date": "2019-06-30",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Contrast, St Petersburg' : On y voit un bâtiment surmonté de trois dômes de différentes tailles. Les couleurs dominantes sont le doré, le vert, le marron foncé et le rouge. Au sommet du dôme le plus gros, on aperçoit une étoile dite de 'David' fixée sur un mât. On aperçoit également des décorations sculptées par endroit notamment avec des représentations des fleurs de lis."
 		},
 		{
 			"id": 6525666253,
@@ -530,7 +530,7 @@
 			"likes": 63,
 			"date": "2019-07-20",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'On a Hill, Tibet' : On y voit un amoncellement de construction d'habitation sur une colline. Les bâtiments sont peint en blanc avec un toit rouge. Certains bâtiments on l'air insalubre vu de l'extérieur. On aperçoit également quelques arbustes. En arrière de cette colline, on voit une chaîne montagneuse de couleur brun par endroit, verdâtre à d'autres endroits et blanchâtre sur certains sommets."
 		},
 		{
 			"id": 98252523433,
@@ -540,7 +540,7 @@
 			"likes": 88,
 			"date": "2020-01-05",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Leaning Tower, Pisa' : On y voit une tour de cinq étages selon la photo. Chaque étage est fait d'un ensemble de colonnes à l'architecture romaine placées à égale distance. La tour est de base de couleur dorée mais on aperçoit par endroit une oxydation de couleur noirâtre. La photo est prise du bas vers le haut."
 		},
 		{
 			"id": 9259398453,
@@ -550,7 +550,7 @@
 			"likes": 57,
 			"date": "2020-01-20",
 			"price": 65,
-      "description": ""
+      "description": "Description de la photo 'Drone shot of Buenos Aires highways' : On y voit le survol, via un drone, de la zone urbaine très dense de la ville de Buenos Aires en commençant de l'échangeur très complexe connecté à des autoroutes. Puis progressivement, la caméra fait une vue panoramique sur toute l'étendue de la ville qui semble être gigantesque."
 		},
 		{
 			"id": 3523523534,
@@ -560,7 +560,7 @@
 			"likes": 54,
 			"date": "2020-05-05",
 			"price": 60,
-      "description": ""
+      "description": "Description de la photo 'Corner Building and Blue Sky' : On y voit les quatre derniers étages d'un immeuble de coin de rue en forme de devanture d'un bateau. Il y a de nombreuses fenêtres à baie vitrée avec des petits balcons noirs. L'avant dernier étage a un grand balcon noir partagé entre les différents appartements. Certains balcons sont fleuris. Le dernier étage a un revêtement de couleur bleu foncé avec des cheminées sur le toit ressemblant à des mégots de cigarettes. L'avant dernier étage et ceux d'en dessous sont peints en rouge et blanc. Au dessus de l'immeuble, on aperçoit un ciel bleuâtre."
 		},
 		{
 			"id": 952343423,
