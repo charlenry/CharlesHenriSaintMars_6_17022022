@@ -32,7 +32,7 @@ header {
 }
 
 header a {
-    display:contents;
+    /* display:contents; */
     text-decoration: none;
 }
 

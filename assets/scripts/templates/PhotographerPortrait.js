@@ -23,7 +23,7 @@ class PhotographerPortrait {
       'aria-label': `${this._photographer.description}`
     });
 
-  //  $img.attr('ariaLabel', `${this._photographer.description}`);
+  //  $img.attr('aria-label', `${this._photographer.description}`);
 
     return $img;
   }

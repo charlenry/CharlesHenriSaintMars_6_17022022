@@ -55,7 +55,7 @@ class Main {
     /* Pour le photographe sélectionné par son ID */
     photographersDataModel.forEach(photographer => {
       if (photographer.id === photographId) {
-        /* Garder en mémoire le prix du photographe sélectionné */
+       /* Garder en mémoire le prix du photographe sélectionné */
         pricePhotographer = photographer.price;
 
         /* Créer les objets template */

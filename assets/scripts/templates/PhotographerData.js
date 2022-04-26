@@ -18,6 +18,9 @@ class PhotographerData {
     const $h1 = $("<h1>").html(`${this._photographer.name}`);
     const $h2 = $("<h2>").html(`${this._photographer.city}, ${this._photographer.country}`);
     const $p = $("<p>").html(`${this._photographer.tagline}`);
+    $h1.attr('tabindex', '1');
+    $h2.attr('tabindex', '1');
+    $p.attr('tabindex', '1');
     return [$h1, $h2, $p];
   }
 }
