@@ -26,3 +26,5 @@ class LikesCounter {
     }
   }
 }
+
+//export default LikesCounter;

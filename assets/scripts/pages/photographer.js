@@ -12,6 +12,10 @@
 // import PhotographerData from "../templates/PhotographerData.js";
 // import PhotographerPortrait from "../templates/PhotographerPortrait.js";
 // import MediaCard from "../templates/MediaCard.js";
+// import BannerTemplate from "../templates/BannerTemplate.js";
+// import SorterTemplate from "../templates/SorterTemplate.js";
+// import ContactModal from "../templates/ContactModal.js";
+
 
  /* Variables globales */
 const url = "assets/data/photographers.json";

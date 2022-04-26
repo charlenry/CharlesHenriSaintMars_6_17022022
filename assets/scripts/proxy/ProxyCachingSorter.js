@@ -23,3 +23,5 @@ class ProxyCachingSorter {
     return data;
   }
 }
+
+//export default ProxyCachingSorter;

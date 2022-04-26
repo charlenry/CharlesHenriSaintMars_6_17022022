@@ -27,3 +27,5 @@ class LikesSubject {
     this._observers.forEach(observer => observer.update(action, media));
   }
 }
+
+//export default LikesSubject;

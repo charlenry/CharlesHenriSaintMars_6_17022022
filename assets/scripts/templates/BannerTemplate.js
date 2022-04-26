@@ -17,11 +17,13 @@ class BannerTemplate {
    }
 
    createBanner() {
-    const $likesWrapper = $(`<div class="likes-wrapper"></div>`).html(`
+    const $likesWrapper = $(`<div tabindex="0" class="likes-wrapper"></div>`).html(`
       <span class="total-likes">${this._totalLikes}</span>
-      <span class="coeur"><i class="fas fa-heart"></i></span>
+      <span aria-label="j'aime au total"class="coeur"><i class="fas fa-heart"></i></span>
     `);
-    const $price = $(`<span class="price"></span>`).text(`${this._pricePhotographer}€/jour`);
+    const $price = $(`<span tabindex="0" class="price"></span>`).text(`${this._pricePhotographer}€/jour`);
     return [$likesWrapper, $price];
    }
 }
+
+//export default BannerTemplate;

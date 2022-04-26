@@ -39,11 +39,12 @@ class SorterTemplate {
   }
 
   onChangeSorter() {
+    const that = this;
     this.$wrapper
       .querySelector('form')
-      .addEventListener('change', e => {
+      .addEventListener('change', function(e) {
         const sorter = e.target.value
-        this.sorterMedias(sorter)
+        that.sorterMedias(sorter)
       });
   }
 
@@ -67,3 +68,5 @@ class SorterTemplate {
     this.$sorterWrapper.appendChild(this.$wrapper)
   }
 }
+
+//export default SorterTemplate;

@@ -29,7 +29,7 @@ class ContactModal {
   onContactButton() {
     const that = this;
 
-    this.$contactMe.addEventListener('click', () => {
+    this.$contactMe.addEventListener('click', function() {
         that.$modalWrapper.classList.add('modal-contact-on');
         that.$wrapper.style.display = "block";
         that.$main.ariaHidden = "true";
@@ -186,63 +186,64 @@ class ContactModal {
     this.$errorLastName = this.$wrapper.querySelector("#error-lname");
     this.$errorEmail = this.$wrapper.querySelector("#error-email");
     this.$errorMessage = this.$wrapper.querySelector("#error-message");
+    const that = this;
 
 
     /*** Contrôle du champ prénom à la saisie ***/
-    this.$firstName.addEventListener("input", () => {
-      this.ControlNameSeizure(this.$firstName, this.$errorFirstName);
+    this.$firstName.addEventListener("input", function() {
+      that.ControlNameSeizure(that.$firstName, that.$errorFirstName);
     });
 
     /*** Contrôle du champ nom à la saisie ***/
-    this.$lastName.addEventListener("input", () => {
-      this.ControlNameSeizure(this.$lastName, this.$errorLastName);
+    this.$lastName.addEventListener("input", function() {
+      that.ControlNameSeizure(that.$lastName, that.$errorLastName);
     });
 
     /*** Contrôle du champ prénom en sortie du champ ***/
-    this.$firstName.addEventListener("blur", () => {
-      this.validateNameOnBlur(this.$firstName);
+    this.$firstName.addEventListener("blur", function() {
+      that.validateNameOnBlur(that.$firstName);
     });
 
     /*** Contrôle du champ nom en sortie du champ ***/
-    this.$lastName.addEventListener("blur", () => {
-      this.validateNameOnBlur(this.$lastName);
+    this.$lastName.addEventListener("blur", function() {
+      that.validateNameOnBlur(that.$lastName);
     });
 
     
     /*** Contrôle du champ Email à la saisie ***/
-    this.$email.addEventListener("input", () => {
-      this.ControlSeizure(this.$email, this.$errorEmail);
+    this.$email.addEventListener("input", function() {
+      that.ControlSeizure(that.$email, that.$errorEmail);
     });
 
     /*** Contrôle du champ E-mail en sortie du champ ***/
-    this.$email.addEventListener("blur", () => {
-      this.validateEmailOnBlur(this.$email);
+    this.$email.addEventListener("blur", function() {
+      that.validateEmailOnBlur(that.$email);
     });
 
 
      /*** Contrôle du champ Message à la saisie ***/
-     this.$message.addEventListener("input", () => {
-      this.ControlSeizure(this.$message, this.$errorMessage);
+     this.$message.addEventListener("input", function() {
+      that.ControlSeizure(that.$message, that.$errorMessage);
     });
 
     /*** Contrôle du champ Message en sortie du champ ***/
-    this.$message.addEventListener("blur", () => {
-      this.validateMessageOnBlur(this.$message);
+    this.$message.addEventListener("blur", function() {
+      that.validateMessageOnBlur(that.$message);
     });
 
     /*** Contrôle du bouton Envoyer ***/
     this.$wrapper
-      .querySelector('#send-form')
-      .addEventListener("click", (e) => { 
-      if (this.validateName(this.$firstName, this.$errorFirstName, e) && 
-          this.validateName(this.$lastName, this.$errorLastName, e) && 
-          this.validateEmail(this.$email, this.$errorEmail, e) && 
-          this.validateMessage(this.$message, this.$errorMessage, e)) {
-        this.collectData();
-        this.clearGreenBorder();
-        this.$wrapper.style.display = "none";
-        this.$modalWrapper.classList.remove('modal-contact-on');
-        this.$contactForm.reset();  //reset the form
+      .querySelector('#send-btn')
+      .addEventListener("click", function(e) { 
+      if (that.validateName(that.$firstName, that.$errorFirstName, e) && 
+          that.validateName(that.$lastName, that.$errorLastName, e) && 
+          that.validateEmail(that.$email, that.$errorEmail, e) && 
+          that.validateMessage(that.$message, that.$errorMessage, e)) {
+        that.collectData();
+        that.clearGreenBorder();
+        that.$wrapper.style.display = "none";
+        that.$modalWrapper.classList.remove('modal-contact-on');
+        that.$contactForm.reset();  //reset the form
         e.preventDefault();   //prevent the modal thanks to close automatically
       }
     });
@@ -254,7 +255,7 @@ class ContactModal {
 
     this.$wrapper
       .querySelector('.close-btn')
-      .addEventListener('click', () => {
+      .addEventListener('click', function() {
         that.$wrapper.style.display = "none";
         that.$modalWrapper.classList.remove('modal-contact-on');
         that.$wrapper.ariaHidden = "true";
@@ -263,7 +264,7 @@ class ContactModal {
 
       this.$wrapper
         .querySelector('.close-btn')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "Enter") {
             that.$wrapper.style.display = "none";
             that.$modalWrapper.classList.remove('modal-contact-on');
@@ -273,7 +274,7 @@ class ContactModal {
         });
 
       this.$wrapper
-      .addEventListener('keydown', (e) => {
+      .addEventListener('keydown', function(e) {
           if (e.key === "Escape") {
             that.$wrapper.style.display = "none";
             that.$modalWrapper.classList.remove('modal-contact-on');
@@ -358,7 +359,7 @@ class ContactModal {
 
         <button
           class="contact-button" 
-          id="send-form"
+          id="send-btn"
           value="Envoyer" 
           tabindex="2"
         />Envoyer</button>
@@ -377,3 +378,5 @@ class ContactModal {
   }
   
 }
+
+//export default ContactModal;

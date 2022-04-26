@@ -44,7 +44,7 @@ class CarouselModal {
 
       this.$wrapper
         .querySelector('.prev')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "Enter") {
             that._btnType = 'prev';
             if (that._mediaIndex > 0) {
@@ -59,7 +59,7 @@ class CarouselModal {
 
       this.$wrapper
         .querySelector('.carousel')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "ArrowLeft") {
             that._btnType = 'prev';
             if (that._mediaIndex > 0) {
@@ -79,7 +79,7 @@ class CarouselModal {
 
     this.$wrapper
       .querySelector('.next')
-      .addEventListener('click', () => {
+      .addEventListener('click', function() {
         if (that._mediaIndex < that._totalMedias - 1) {
           that._mediaIndex += 1;
           that.selectMedia();
@@ -91,7 +91,7 @@ class CarouselModal {
 
       this.$wrapper
         .querySelector('.next')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "Enter") {
             that._btnType = 'next';
             if (that._mediaIndex < that._totalMedias - 1) {
@@ -106,7 +106,7 @@ class CarouselModal {
 
       this.$wrapper
         .querySelector('.carousel')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "ArrowRight") {
             that._btnType = 'next';
             if (that._mediaIndex < that._totalMedias - 1) {
@@ -144,7 +144,7 @@ class CarouselModal {
 
     this.$wrapper
       .querySelector('.close-btn--carousel')
-      .addEventListener('click', () => {
+      .addEventListener('click', function() {
         that.$modalWrapper.classList.remove('modal-carousel-on');
         that.$wrapper.remove();
         that.$wrapper.innerHTML = "";
@@ -154,7 +154,7 @@ class CarouselModal {
 
       this.$wrapper
         .querySelector('.close-btn--carousel')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "Enter") {
             that.$modalWrapper.classList.remove('modal-carousel-on');
             that.$wrapper.remove();
@@ -166,7 +166,7 @@ class CarouselModal {
 
       this.$wrapper
         .querySelector('.carousel')
-        .addEventListener('keydown', (e) => {
+        .addEventListener('keydown', function(e) {
           if (e.key === "Escape") {
             that.$modalWrapper.classList.remove('modal-carousel-on');
             that.$wrapper.remove();
@@ -259,3 +259,5 @@ class CarouselModal {
       this.createCarousel();
   }
 }
+
+//export default CarouselModal;
