@@ -32,7 +32,7 @@ class CarouselModal {
 
     this.$wrapper
       .querySelector('.prev')
-      .addEventListener('click', () => {
+      .addEventListener('click', function() {
         if (that._mediaIndex > 0) {
           that._mediaIndex -= 1;
           that.selectMedia();
@@ -248,10 +248,6 @@ class CarouselModal {
 
   //  this.previousBtnFocus();
     this.$wrapper.focus();
-    this.onPreviousMedia();
-    this.onNextMedia();
-    this.onCloseButton();
-
   }
 
 
