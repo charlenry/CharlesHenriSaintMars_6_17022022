@@ -157,6 +157,7 @@ class CarouselModal {
         that.$wrapper.innerHTML = "";
         that.$wrapper.ariaHidden = "true";
         that.$main.ariaHidden = "false";
+//        that.$main.style.display = "block";
       });
 
     this.$wrapper
@@ -169,6 +170,7 @@ class CarouselModal {
           that.$wrapper.innerHTML = "";
           that.$wrapper.ariaHidden = "true";
           that.$main.ariaHidden = "false";
+//          that.$main.style.display = "block";
         }
       });
 
@@ -182,6 +184,7 @@ class CarouselModal {
           that.$wrapper.innerHTML = "";
           that.$wrapper.ariaHidden = "true";
           that.$main.ariaHidden = "false";
+//          that.$main.style.display = "block";
         }
       });
   }
@@ -291,8 +294,8 @@ class CarouselModal {
 
     this.$modalWrapper.classList.add('modal-carousel-on');
     this.$modalWrapper.appendChild(this.$wrapper);
-
-  //  this.previousBtnFocus();
+//    this.$main.style.display = "none";
+//    this.previousBtnFocus();
     this.$wrapper__desc.focus();
   }
 

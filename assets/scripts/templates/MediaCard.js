@@ -61,7 +61,7 @@ class MediaCard {
       .addEventListener('click', function() {
         const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
         that.$main.ariaHidden = "true";
-        carousel.render();
+        carousel.render();     
       });
 
       this.$wrapper
@@ -70,7 +70,7 @@ class MediaCard {
         if (e.key === "Enter") {
           const carousel = new CarouselModal(that._media, that._thatPhotograherMedias);
           that.$main.ariaHidden = "true";
-          carousel.render();
+          carousel.render();  
         }
       });
   }
