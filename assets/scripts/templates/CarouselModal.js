@@ -152,29 +152,58 @@ class CarouselModal {
         that.$main.ariaHidden = "false";
       });
 
-      this.$wrapper
-        .querySelector('.close-btn--carousel')
-        .addEventListener('keydown', function(e) {
-          if (e.key === "Enter") {
-            that.$modalWrapper.classList.remove('modal-carousel-on');
-            that.$wrapper.remove();
-            that.$wrapper.innerHTML = "";
-            that.$wrapper.ariaHidden = "true";
-            that.$main.ariaHidden = "false";
-          }
-        });
+    this.$wrapper
+      .querySelector('.close-btn--carousel')
+      .addEventListener('keydown', function(e) {
+        if (e.key === "Enter") {
+          that.$modalWrapper.classList.remove('modal-carousel-on');
+          that.$wrapper.remove();
+          that.$wrapper.innerHTML = "";
+          that.$wrapper.ariaHidden = "true";
+          that.$main.ariaHidden = "false";
+        }
+      });
 
-      this.$wrapper
-        .querySelector('.carousel')
-        .addEventListener('keydown', function(e) {
-          if (e.key === "Escape") {
-            that.$modalWrapper.classList.remove('modal-carousel-on');
-            that.$wrapper.remove();
-            that.$wrapper.innerHTML = "";
-            that.$wrapper.ariaHidden = "true";
-            that.$main.ariaHidden = "false";
-          }
-        });
+    this.$wrapper
+      .querySelector('.carousel')
+      .addEventListener('keydown', function(e) {
+        if (e.key === "Escape") {
+          that.$modalWrapper.classList.remove('modal-carousel-on');
+          that.$wrapper.remove();
+          that.$wrapper.innerHTML = "";
+          that.$wrapper.ariaHidden = "true";
+          that.$main.ariaHidden = "false";
+        }
+      });
+  }
+
+
+  /* Tab management for the carousel modal */
+  onTabOutCarouselModal() {
+    const that = this;
+    
+    this.$wrapper
+      .querySelector('.prev')
+      .addEventListener('keydown', function(e) {                
+        if (e.key === "Tab" && e.shiftKey) {
+          e.preventDefault();
+          that.$wrapper.querySelector('.close-btn--carousel').focus();
+        }
+      });
+
+    this.$wrapper
+    .querySelector('.close-btn--carousel')
+    .addEventListener('keydown', function(e) {
+      if (e.key === "Tab") {
+        e.preventDefault();
+        that.$wrapper.querySelector('.prev').focus();
+      }
+
+      if (e.key === "Tab" && e.shiftKey) {
+        e.preventDefault();
+        that.$wrapper.querySelector('.next').focus();
+      }
+    });
   }
 
 
@@ -233,6 +262,7 @@ class CarouselModal {
     this.onPreviousMedia();
     this.onNextMedia();
     this.onCloseButton();
+    this.onTabOutCarouselModal();
   }
 
 

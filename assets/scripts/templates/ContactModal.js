@@ -41,7 +41,7 @@ class ContactModal {
 
    /*** Fonction de contrôle des champs prénom ou nom à la saisie ***/
    ControlNameSeizure = (field, error) => {
-    if (field.value != "" || field.value.length >= 3 || field.value.length <= 30) {  //if empty string or characters are between 3 and 30
+    if (field.value != "" || field.value.length >= 3 || field.value.length <= 30) {  //if not empty string or characters are between 3 and 30
       error.style.visibility = "hidden";  
       error.innerHTML = "";
       field.style.border = "";
@@ -146,7 +146,7 @@ class ContactModal {
 
   /*** Fonction de contrôle du message en sortie du champ ***/
   validateMessageOnBlur = (field) => {
-    if (field.value != "") {
+    if (field.value != "" && field.value.length >= 3) {
       field.style.border = "3px solid #00FF00";
     }
   }
@@ -262,35 +262,64 @@ class ContactModal {
         that.$main.ariaHidden = "false";
       });
 
-      this.$wrapper
-        .querySelector('.close-btn')
-        .addEventListener('keydown', function(e) {
-          if (e.key === "Enter") {
-            that.$wrapper.style.display = "none";
-            that.$modalWrapper.classList.remove('modal-contact-on');
-            that.$wrapper.ariaHidden = "true";
-            that.$main.ariaHidden = "false";
-          }
-        });
-
-      this.$wrapper
+    this.$wrapper
+      .querySelector('.close-btn')
       .addEventListener('keydown', function(e) {
-          if (e.key === "Escape") {
-            that.$wrapper.style.display = "none";
-            that.$modalWrapper.classList.remove('modal-contact-on');
-            that.$wrapper.ariaHidden = "true";
-            that.$main.ariaHidden = "false";
-          }
-        });
+        if (e.key === "Enter") {
+          that.$wrapper.style.display = "none";
+          that.$modalWrapper.classList.remove('modal-contact-on');
+          that.$wrapper.ariaHidden = "true";
+          that.$main.ariaHidden = "false";
+        }
+      });
+
+    this.$wrapper
+    .addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        that.$wrapper.style.display = "none";
+        that.$modalWrapper.classList.remove('modal-contact-on');
+        that.$wrapper.ariaHidden = "true";
+        that.$main.ariaHidden = "false";
+      }
+    });
   }
 
+  
+   /* Tab management for the contact modal */
+  onTabOutContactModal() {
+    const that = this;
+
+    this.$wrapper
+      .querySelector('#contact-me')
+      .addEventListener('keydown', function(e) {                
+        if (e.key === "Tab" && e.shiftKey) {
+          e.preventDefault();
+          that.$wrapper.querySelector('#send-btn').focus();
+        }
+      });
+
+    this.$wrapper
+    .querySelector('#send-btn')
+    .addEventListener('keydown', function(e) {
+      if (e.key === "Tab") {
+        e.preventDefault();
+        that.$wrapper.querySelector('#contact-me').focus();
+      }
+      
+      if (e.key === "Tab" && e.shiftKey) {
+        e.preventDefault();
+        that.$wrapper.querySelector('#message').focus();
+      }
+    });
+  }
+  
 
 
   createFormContact() {
     const formBody = `
       <header>
-      <h2 tabindex="2">Contactez-moi <br>${this._photographer.name}</h2>
-      <img tabindex="2" class="close-btn" aria-label="Fermer la fenêtre" src="assets/images/icons/close.svg">
+        <h2 id="contact-me" tabindex="2">Contactez-moi <br>${this._photographer.name}</h2>
+        <img tabindex="2" class="close-btn" aria-label="Fermer la fenêtre" src="assets/images/icons/close.svg">
       </header>
       <form name="contact" action="photographer.html" method="get" id="contact-form">
         <div>
@@ -371,6 +400,7 @@ class ContactModal {
     this.onContactButton();
     this.controlData();
     this.onCloseButton();
+    this.onTabOutContactModal();
   }
 
   render() {

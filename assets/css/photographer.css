@@ -298,8 +298,8 @@ figure > div, .video-wrapper > div {
 
 .carousel img,
 .carousel video {
-    width: 920px;
-    height: 880px;
+    width: 950px;
+    height: 885px;
     object-fit: cover;
 }
 
@@ -311,6 +311,8 @@ figure > div, .video-wrapper > div {
 .carousel .caption {
     color: #901C1C;
     font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .close-btn--carousel {
