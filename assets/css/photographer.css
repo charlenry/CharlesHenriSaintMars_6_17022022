@@ -285,6 +285,10 @@ figure > div, .video-wrapper > div {
 
 
 /* Carousel */
+.modal-wrapper__desc-carousel:focus {
+    outline: none;
+}
+
 .modal-wrapper__carousel {
     position: absolute;
     left: 50%;

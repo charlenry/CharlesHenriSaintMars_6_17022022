@@ -18,9 +18,15 @@ class CarouselModal {
     this.$wrapper.classList.add('modal-wrapper__carousel');
     this.$wrapper.ariaHidden = "false";
     this.$wrapper.role = "dialog";
-    this.$wrapper.ariaLabel = "Ouverture de la lightbox. Vous pouvez naviguer entre les médias avec les flèches gauche et droite du clavier et fermer la lightbox avec la touche Échap. Appuyez sur Tab pour continuer.";
-    this.$wrapper.tabIndex = "0";
+
+    this.$wrapper__desc = document.createElement('div');
+    this.$wrapper__desc.classList.add('modal-wrapper__desc-carousel');
+    this.$wrapper__desc.ariaLabel = "Ouverture de la lightbox. Vous pouvez naviguer entre les médias avec les flèches gauche et droite du clavier et fermer la lightbox avec la touche Échap. Appuyez sur Tab pour continuer.";
+    this.$wrapper__desc.tabIndex = "0";
+
     this.$modalWrapper = document.querySelector('.modal-wrapper');
+    this.$modalWrapper.appendChild(this.$wrapper__desc);
+    
     this.$previousMedia = document.querySelector('.prev');
     this.$nextMedia = document.querySelector('.next');
     this.$main = document.querySelector('#main');
@@ -146,6 +152,7 @@ class CarouselModal {
       .querySelector('.close-btn--carousel')
       .addEventListener('click', function() {
         that.$modalWrapper.classList.remove('modal-carousel-on');
+        that.$wrapper__desc.remove();
         that.$wrapper.remove();
         that.$wrapper.innerHTML = "";
         that.$wrapper.ariaHidden = "true";
@@ -157,6 +164,7 @@ class CarouselModal {
       .addEventListener('keydown', function(e) {
         if (e.key === "Enter") {
           that.$modalWrapper.classList.remove('modal-carousel-on');
+          that.$wrapper__desc.remove();
           that.$wrapper.remove();
           that.$wrapper.innerHTML = "";
           that.$wrapper.ariaHidden = "true";
@@ -169,6 +177,7 @@ class CarouselModal {
       .addEventListener('keydown', function(e) {
         if (e.key === "Escape") {
           that.$modalWrapper.classList.remove('modal-carousel-on');
+          that.$wrapper__desc.remove();
           that.$wrapper.remove();
           that.$wrapper.innerHTML = "";
           that.$wrapper.ariaHidden = "true";
@@ -182,7 +191,7 @@ class CarouselModal {
   onTabOutCarouselModal() {
     const that = this;
 
-    this.$wrapper.addEventListener('keydown', function(e) {
+    this.$wrapper__desc.addEventListener('keydown', function(e) {
       if (e.key === "Tab" && e.shiftKey) {
         e.preventDefault();
         that.$wrapper.querySelector('.close-btn--carousel').focus();
@@ -284,7 +293,7 @@ class CarouselModal {
     this.$modalWrapper.appendChild(this.$wrapper);
 
   //  this.previousBtnFocus();
-    this.$wrapper.focus();
+    this.$wrapper__desc.focus();
   }
 
 
