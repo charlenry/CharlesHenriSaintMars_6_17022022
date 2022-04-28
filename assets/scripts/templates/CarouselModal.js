@@ -18,7 +18,7 @@ class CarouselModal {
     this.$wrapper.classList.add('modal-wrapper__carousel');
     this.$wrapper.ariaHidden = "false";
     this.$wrapper.role = "dialog";
-    this.$wrapper.ariaLabel = "Ouverture du carrousel";
+    this.$wrapper.ariaLabel = "Ouverture de la lightbox. Vous pouvez naviguer entre les médias avec les flèches gauche et droite du clavier et fermer la lightbox avec la touche Échap. Appuyez sur Tab pour continuer.";
     this.$wrapper.tabIndex = "0";
     this.$modalWrapper = document.querySelector('.modal-wrapper');
     this.$previousMedia = document.querySelector('.prev');
@@ -181,10 +181,17 @@ class CarouselModal {
   /* Tab management for the carousel modal */
   onTabOutCarouselModal() {
     const that = this;
+
+    this.$wrapper.addEventListener('keydown', function(e) {
+      if (e.key === "Tab" && e.shiftKey) {
+        e.preventDefault();
+        that.$wrapper.querySelector('.close-btn--carousel').focus();
+      }
+    });
     
     this.$wrapper
       .querySelector('.prev')
-      .addEventListener('keydown', function(e) {                
+      .addEventListener('keydown', function(e) {
         if (e.key === "Tab" && e.shiftKey) {
           e.preventDefault();
           that.$wrapper.querySelector('.close-btn--carousel').focus();

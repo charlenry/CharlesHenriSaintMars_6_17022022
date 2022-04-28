@@ -34,6 +34,7 @@ class ContactModal {
         that.$wrapper.style.display = "block";
         that.$main.ariaHidden = "true";
         that.$wrapper.ariaHidden = "false";
+        that.$wrapper.querySelector('#contact-me').focus();
       });
   }
 
