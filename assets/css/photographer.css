@@ -110,7 +110,7 @@ form div {
     /* display: flex; */
     flex-direction: column;
     width: 100%;
-    align-items: self-start;
+    align-items: start;
     margin-bottom: 5px;
 }
 
