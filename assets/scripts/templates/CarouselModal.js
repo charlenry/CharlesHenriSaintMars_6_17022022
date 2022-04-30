@@ -21,7 +21,7 @@ class CarouselModal {
 
     this.$wrapper__desc = document.createElement('div');
     this.$wrapper__desc.classList.add('modal-wrapper__desc-carousel');
-    this.$wrapper__desc.ariaLabel = "Ouverture de la lightbox. Vous pouvez naviguer entre les médias avec les flèches gauche et droite du clavier et fermer la lightbox avec la touche Échap. Appuyez sur Tab pour continuer.";
+    this.$wrapper__desc.title = "Ouverture de la lightbox. Vous pouvez naviguer entre les médias avec les flèches gauche et droite du clavier et fermer la lightbox avec la touche Échap. Appuyez sur Tab pour continuer.";
     this.$wrapper__desc.tabIndex = "0";
 
     this.$modalWrapper = document.querySelector('.modal-wrapper');
