@@ -308,7 +308,7 @@ figure > div, .video-wrapper > div {
 }
 
 .carousel img {
-    object-fit: fill;
+    object-fit: cover;
     /* object-position: 0px -160px; */
 }
 
