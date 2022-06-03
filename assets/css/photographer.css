@@ -388,7 +388,7 @@ figure > div, .video-wrapper > div {
     .carousel img,
     .carousel video {
         max-width: 950px;
-        max-height: 710px;
+        max-height: 560px;
     }
 }
 
@@ -397,7 +397,7 @@ figure > div, .video-wrapper > div {
     .carousel img,
     .carousel video {
         max-width: 800px;
-        max-height: 520px;
+        max-height: 460px;
     }
 }
 
