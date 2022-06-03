@@ -383,4 +383,29 @@ figure > div, .video-wrapper > div {
   }
 
 
+/*** Medias Queries ***/
+@media screen and (max-width : 1280px) {
+    .carousel img,
+    .carousel video {
+        max-width: 950px;
+        max-height: 710px;
+    }
+}
 
+
+@media screen and (max-width : 1024px) {
+    .carousel img,
+    .carousel video {
+        max-width: 800px;
+        max-height: 520px;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .carousel img,
+    .carousel video {
+        max-width: 650px;
+        max-height: 520px;
+    }
+}
