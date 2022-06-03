@@ -405,7 +405,7 @@ figure > div, .video-wrapper > div {
 @media screen and (max-width : 768px) {
     .carousel img,
     .carousel video {
-        max-width: 650px;
+        max-width: 620px;
         max-height: 580px;
     }
 }
