@@ -22,7 +22,7 @@ class LikesCounter {
       $(`#likes-${media.id}`).text(this._likes-1);
       $(".total-likes").text(this._totalLikes-1);
     } else {
-        throw "Unknow action";
+        throw "Unknown action";
     }
   }
 }

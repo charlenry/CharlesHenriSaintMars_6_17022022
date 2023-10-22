@@ -1,5 +1,4 @@
 # Projet FishEye
-FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux.
-Ce projet consiste à créer un prototype fonctionnel et accessible* de FishEye.
+Depuis quelques semaines, je suis développeur junior chez Techasite, une société de conseil spécialisée dans le développement de sites web et d'applications mobiles. Ma mission est de créer le prototype fonctionnel d'un nouveau site web, FishEye, qui est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux. Ce site web doit être accessible, c'est-à-dire qu'il doit être navigable au clavier et via des lecteurs d'écran et les vidéos doivent être sous-titrées. Il doit être réalisé en HTML + CSS + Vanilla Javascript. 
 
-Accessible sous-entend qui soit navigable au clavier et via les lecteurs d'écran.
+Pour cela, je dispose de maquettes Figma, de notes de réunion détaillant les principales fonctionnalités et les contraintes techniques, des exemples de photos et de vidéos, des données au format JSON, ainsi qu'une partie du code HTML et du CSS déjà mis en place sur un dépôt Github et à forker. L'usage de Design Patterns tel que le Pattern Factory est recommandé. Le Pattern Constructor s'impose aussi pour la modélisation des données. Remarque: j'ai développé ce projet en Programmation Orientée Objet (POO).

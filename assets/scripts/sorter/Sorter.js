@@ -38,7 +38,7 @@ class Sorter {
         }, 0);
       });
     } else {
-        throw 'unknow orderBy type';
+        throw 'Unknown orderBy type';
     }
   }
 }
