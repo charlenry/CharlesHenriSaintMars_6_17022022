@@ -3,4 +3,4 @@ Depuis quelques semaines, je suis développeur junior chez Techasite, une socié
 
 Pour cela, je dispose de maquettes Figma, de notes de réunion détaillant les principales fonctionnalités et les contraintes techniques, des exemples de photos et de vidéos, des données au format JSON, ainsi qu'une partie du code HTML et du CSS déjà mis en place sur un dépôt Github et à forker. L'usage de Design Patterns tel que le Pattern Factory est recommandé. Le Pattern Constructor s'impose aussi pour la modélisation des données. 
 
-Remarque: j'ai développé ce projet en Programmation Orientée Objet (POO).
+Remarque: j'ai développé ce projet en Programmation Orientée Objet (POO). J'ai également utilisé le Proxy-Pattern et l'Observer-Pattern (Publisher/Subscriber) comme Design Patterns.
