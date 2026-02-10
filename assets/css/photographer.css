@@ -303,7 +303,7 @@ figure > div, .video-wrapper > div {
 .carousel img,
 .carousel video {
     max-width: 1160px;
-    max-height: 650px;
+    max-height: 800px;
     object-fit: cover;
 }
 
