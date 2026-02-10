@@ -183,7 +183,7 @@ form textarea {
 figure > div, .video-wrapper > div {
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    /* width: 450px; */
     font-size: 22px;
     color: #901C1C;
 }
@@ -303,7 +303,7 @@ figure > div, .video-wrapper > div {
 .carousel img,
 .carousel video {
     max-width: 1160px;
-    max-height: 880px;
+    max-height: 650px;
     object-fit: cover;
 }
 
